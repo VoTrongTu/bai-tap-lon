@@ -1,40 +1,59 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>CSS Grid Advanced Example 2</title>
-<style>
-.gallery {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 15px;
-padding: 20px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle-container {
+  position: relative;
+  width: 400px;   /* khung bao ngoài */
+  height: 400px;
 }
-.gallery__item {
-background-color: #b2ebf2;
-padding: 10px;
-border-radius: 5px;
-text-align: center;
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 20px solid red; /* màu trắng mờ */
 }
-.gallery__item img {
-max-width: 100%;
-border-radius: 5px;
+
+.circle1 {
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
 }
-.gallery__item--large {
-grid-column: span 2; /* Chiếm 2 cột */
+
+.circle2 {
+  width: 300px;
+  height: 300px;
+  top: 50px;
+  left: 50px;
 }
-</style>
+
+.circle3 {
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  left: 100px;
+}
+
+.circle4 {
+  width: 100px;
+  height: 100px;
+  top: 150px;
+  left: 150px;
+}
+
+    </style>
 </head>
 <body>
-<div class="gallery">
-<div class="gallery__item"><img src="https://via.placeholder.com/200"
-alt="Image 1"></div>
-<div class="gallery__item gallery__item--large"><img
-src="https://via.placeholder.com/400" alt="Image 2"></div>
-<div class="gallery__item"><img src="https://via.placeholder.com/200"
-alt="Image 3"></div>
-<div class="gallery__item"><img src="https://via.placeholder.com/200"
-alt="Image 4"></div>
+    <div class="circle-container">
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+  <div class="circle circle3"></div>
+  <div class="circle circle4"></div>
 </div>
+
 </body>
 </html>

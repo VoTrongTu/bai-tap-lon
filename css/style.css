@@ -3,7 +3,6 @@
     width: 1440px;
     height:2724px;
     position: relative;
-    gap: 0px;
 }
 /* Phần Nav-Bar-Top  */
 .Nav-Bar-Top{
@@ -55,6 +54,7 @@
     margin-left: 408px;
     width: 236px;
     height: 44px;
+    display: flex;
     gap: 20px;
 }
 .like,.Notification,.settings,.Profil{
@@ -66,4 +66,84 @@
     width:1440px;
     height: 2120px;
     background-color: #F6F7F9;
+}
+.Advertisement{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+}
+.Ads1{
+    width: 640px;
+    height: 360px;
+    background-color: #54A6FF;
+    border-radius: 10px;
+}
+.Ads2{
+    width: 640px;
+    height: 360px;
+    background-color: #3563E9;
+    border-radius: 10px;
+}
+.Ads{
+    width:248px;
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+.Title{
+    display: flex;
+    flex-direction: column;
+}
+.content-title1{
+    width: 272px;
+    height: 96px;
+    font: normal 600 32px 'Plus Jakarta Sans';
+    color: #FFFFFF;
+    line-height: 150%;
+    margin-bottom:0;
+}
+.content-title2{
+    width: 284px;
+    height: 48px;
+    font: normal 500 16px 'Plus Jakarta Sans';
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+.Button-Rent{
+    position: relative;
+    width: 120px;
+    height: 44px;
+    background-color:#3563E9 ;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:0px;
+    cursor: pointer;
+}
+/* chuyển đậm hơn khi đưa chuột vào*/
+.Button-Rent:hover {
+    background-color: #254BC9; 
+}
+.Rental-Car{
+    width:80px;
+    height: 24px;
+    font: normal 600 16px 'Plus Jakarta Sans';
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.BG{
+    width: 775px;
+    height: 775px;
+    margin-left: -175px;
+    margin-top: -83px;
+    color: #FFFFFF0F;
+    
+}
+.Ellipse{
+    position: relative;
 }

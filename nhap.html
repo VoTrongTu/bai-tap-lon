@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>CSS Grid Advanced Example 2</title>
+<style>
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 15px;
+padding: 20px;
+}
+.gallery__item {
+background-color: #b2ebf2;
+padding: 10px;
+border-radius: 5px;
+text-align: center;
+}
+.gallery__item img {
+max-width: 100%;
+border-radius: 5px;
+}
+.gallery__item--large {
+grid-column: span 2; /* Chiếm 2 cột */
+}
+</style>
+</head>
+<body>
+<div class="gallery">
+<div class="gallery__item"><img src="https://via.placeholder.com/200"
+alt="Image 1"></div>
+<div class="gallery__item gallery__item--large"><img
+src="https://via.placeholder.com/400" alt="Image 2"></div>
+<div class="gallery__item"><img src="https://via.placeholder.com/200"
+alt="Image 3"></div>
+<div class="gallery__item"><img src="https://via.placeholder.com/200"
+alt="Image 4"></div>
+</div>
+</body>
+</html>

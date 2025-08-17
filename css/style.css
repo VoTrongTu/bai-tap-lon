@@ -1,4 +1,69 @@
+/* CSS trang đầu tiên Home-car-Rent */
 .Home-car-Rent{
-    width: 1440;
-    height:2724;
+    width: 1440px;
+    height:2724px;
+    position: relative;
+    gap: 0px;
+}
+/* Phần Nav-Bar-Top  */
+.Nav-Bar-Top{
+    width:1440px;
+    height:124px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 32px;
+}
+
+.search{
+    width:492px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 70px;
+    
+}
+
+.logo{
+    font: normal 700 32px 'Plus Jakarta Sans';
+    color: #3563E9;
+    line-height: 150%;
+    margin-right: 64px;
+}
+
+.search-img{
+    width :24px;
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.search-something{
+    height: 20px;
+    font: normal 500 14px 'Plus Jakarta Sans';      
+    line-height: 150%;
+    margin-right: 235px;
+}
+.search-filter{
+    width: 24px;
+    height: 24px;
+    
+}
+.Profil-and-Notification{
+    position: relative;
+    margin-left: 408px;
+    width: 236px;
+    height: 44px;
+    gap: 20px;
+}
+.like,.Notification,.settings,.Profil{
+    width: 44px;
+    height: 44px;
+}
+    /* Phần content */
+.container-Content{
+    width:1440px;
+    height: 2120px;
+    background-color: #F6F7F9;
 }

@@ -79,41 +79,51 @@
     height: 360px;
     background-color: #54A6FF;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 .Ads2{
     width: 640px;
     height: 360px;
     background-color: #3563E9;
     border-radius: 10px;
+    overflow:hidden;
+    
 }
-.Ads{
+.Ads-Ads1,.Ads-Ads2{
     width:248px;
     height: 224px;
     display: flex;
     flex-direction: column;
     margin-left: 24px;
+    z-index: 1;
 }
-.Title{
+.Title-Ads1,Title-Ads2{
     display: flex;
     flex-direction: column;
+   
 }
-.content-title1{
-    width: 272px;
+.content-title1-Ads1,
+.content-title1-Ads2{
+    width: 273px;
     height: 96px;
     font: normal 600 32px 'Plus Jakarta Sans';
     color: #FFFFFF;
     line-height: 150%;
     margin-bottom:0;
 }
-.content-title2{
+.content-title2-Ads1,
+.content-title2-Ads2{
     width: 284px;
     height: 48px;
     font: normal 500 16px 'Plus Jakarta Sans';
     line-height: 150%;
     color: #FFFFFF;
     margin-top: 0;
+    
 }
-.Button-Rent{
+.Button-Rent-Ads1{
     position: relative;
     width: 120px;
     height: 44px;
@@ -125,32 +135,100 @@
     border:0px;
     cursor: pointer;
 }
+.Button-Rent-Ads2{
+    position: relative;
+    width: 120px;
+    height: 44px;
+    background-color:#54A6FF ;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:0px;
+    cursor: pointer;
+}
 /* chuyển đậm hơn khi đưa chuột vào*/
-.Button-Rent:hover {
+.Button-Rent-Ads1:hover,
+.Button-Rent-Ads2:hover {
     background-color: #254BC9; 
 }
-.Rental-Car{
+.Rental-Car-Ads1,
+.Rental-Car-Ads2{
     width:80px;
     height: 24px;
     font: normal 600 16px 'Plus Jakarta Sans';
     line-height: 150%;
     color: #FFFFFF;
 }
-.BG{
-    width: 775px;
-    height: 775px; 
-    left: -157px;
-    top: -83px;
+
+.image7{
     position: relative;
-    /* overflow: hidden; */
+    left: 137px; 
+    z-index: 1;
 }
-.circle1{
-    position: absolute;
-    width :775px;
+.BG-Ads1 {
+    position: relative;
+    width: 775px;
     height: 775px;
-    left: -157px;
-    top: -83px;
-    border : 20px solid #FFFFFF0F;
-    border-radius:50% ;
+} 
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 20px solid #FFFFFF0F; /* có thể đổi thành rgba(255,255,255,0.08) */
+    transform: translate(-50%, -50%); /* tâm đúng giữa */
+    margin-top: -47px;
+    margin-left: 230px;
+    width: 775px;
+    height: 775px;
+}
+
+.circle1 {
+    width: 775px;
+    height: 775px;
+}
+
+.circle2 {
+    width: 650px;
+    height:650px;
+}
+
+.circle3 {
+    width: 525px;
+    height: 525px;
+}
+
+.circle4 {
+    width: 400px;
+    height: 400px;
+}
+.circle5{
+    width: 275px;
+    height: 275px;
+}
+.circle6{
+    width: 150px;
+    height: 150px;
+}
+.circle7{
+    border: 10px solid #FFFFFF0F;
+    width:50px;
+    height: 50px;
+}
+.Rectangle{
+    display: flex; 
+    flex-direction: column;
     
+}
+.Rectangle-top{
+    display: flex;
+    position: absolute; 
+    gap: 16px;
+} 
+.Rectangle-middle{
+    display: flex;
+    position: absolute; 
+    margin-top: 75px;
+    margin-left: 16px;
+    margin-right: 3px;
+    gap: 16px;
 }

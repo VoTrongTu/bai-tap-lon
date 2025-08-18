@@ -4,7 +4,7 @@
     height:2724px;
     position: relative;
 }
-/* Phần Nav-Bar-Top  */
+/* ----------------Phần Nav-Bar-Top----------------  */
 .Nav-Bar-Top{
     width:1440px;
     height:124px;
@@ -66,6 +66,11 @@
     width:1440px;
     height: 2120px;
     background-color: #F6F7F9;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+
 }
 .Advertisement{
     display: flex;
@@ -217,18 +222,267 @@
 .Rectangle{
     display: flex; 
     flex-direction: column;
-    
+   
 }
 .Rectangle-top{
     display: flex;
     position: absolute; 
     gap: 16px;
+    
 } 
 .Rectangle-middle{
     display: flex;
     position: absolute; 
-    margin-top: 75px;
+    margin-top: 120px;
     margin-left: 16px;
     margin-right: 3px;
     gap: 16px;
+}
+.Rectangle-bottom{
+    display: flex;
+    position: absolute; 
+    margin-top: 240px;
+    margin-left: 0px;
+    gap: 16px;
+}
+.img8{
+    position: relative;
+    z-index: 1;
+    left: 187px;
+}
+.Drop-Pick-Switch{
+    display: flex;
+    gap: 44px; 
+    margin-top: 32px;
+    margin-left: 64px;
+}
+.Pick-Up-Containt,
+.Drop-Off-Containt{
+    position: relative;
+    width :582px;
+    height: 132px;
+    background-color: #FFFFFF;
+    /* gap: 8px; */
+    
+}
+.Pick-Up,
+.Drop-Off{
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    padding-left: 48px;
+    /* padding-top: 24px;  */
+}
+.padding-mark{
+    width: 16px;
+    height: 16px;
+    border-radius: 70px;
+    background-color: #3563E94D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mark,.mark-Drop-Off{
+    width: 8px;
+    height: 8px;
+    background-color: #3563E9;
+    border-radius: 70px;
+    cursor: pointer;
+}
+.mark-Drop-Off{
+    background-color: #54A6FF;
+}
+#Pick-Up,
+#Drop-Off{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+    line-height: 150%;
+}
+.Pick-Up-Infor,
+.Drop-Off-Infor{
+    display: flex;
+    padding-left: 48px;
+    
+}
+.DATE,.TIME{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 24px;
+}
+
+.Loca,.date,.time{
+    font: normal 700 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+
+#city{
+    display: flex;
+    position: absolute;
+    width: 126px;
+    height: 20px;
+    outline: none;
+    font: normal 500 12px 'Plus Jakarta Sans';
+    color: #90A3BF;
+    line-height: 100%;
+    border: 0;
+    margin-top: 8px;
+}
+#Date,#Time{
+    border :0;
+    font: normal 500 12px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+/* .default-display{
+    
+} */
+.line{
+    width :1px;
+    height: 58px;
+    background-color: #C3D4E966;
+    margin-left: 73px;
+}
+.container-Switch{
+    width :60px;  
+    height: 60px;  
+    background-color: #3563E9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    cursor :pointer;
+}
+/* .swap::hover{
+    background-color: green;
+} */
+ /* --------------Catalogue Car----------------- */
+
+ .Catalogue-Car{
+    width: 1312px;
+    height: 1356px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 64px;
+    margin-top: 36px;
+    gap: 32px;
+ }
+ .Popular-Car-Rent{
+    height: 452px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+ .padding-Popular,.padding-View{
+    width :132px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .Popular{
+    display: flex;
+    gap: 1076px;
+ }
+ .Popular-Car{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    line-height:100%;
+    color: #90A3BF;
+ }
+.View{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    line-height:100%;
+    color: #3563E9;
+}
+.Popular-Car-List{
+    height: 388px;
+    display: flex;
+    gap: 32px;
+}
+.Catalog1, .Catalog2,.Catalog3,.Catalog4{
+    width :304px;
+    height: 388px;
+    background-color: #FFFFFF;
+}
+.heart{
+    position: absolute;
+    padding-top: 24px;
+    padding-left: 256px;
+}
+.Name-Car{
+    margin-left: 24px;
+    margin-top: 24px;
+}
+.Name{
+    font: normal 700 20px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.Type-Car{
+    font:normal 700 14px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.image-catalo1{
+    width :232px;
+    height: 72px;
+    margin-top: 64px;
+    margin-left: 36px;
+}
+.Shadow{
+    width :304px;
+    height: 68px;
+    position: absolute;
+    top: 167px;
+    background-color: #FFFFFF00;
+}
+.Spesifitation{
+    display: flex;
+    gap: 16px;
+    margin-left: 24px;
+    margin-top: 37px;
+}
+.Gasoline,.Car,.Capacity{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.volume,.Manual,.people{
+    font: normal 500 14px 'Plus Jakarta SanS';
+    color: #90A3BF;
+    line-height: 100%;
+}
+.Price-Rental{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.Price{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin-left: 24px;
+}
+.price{
+    font: normal 700 20px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.per-day{
+    font: normal 700 14px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.padding-Button-Rental{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width :116px;
+    height: 44px;
+    border: 0;
+    background-color: #3563E9;
+    z-index: 1;
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.padding-Button-Rental:hover{
+    background-color: #254BC9;
 }

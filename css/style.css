@@ -437,7 +437,6 @@
 .Spesifitation{
     display: flex;
     gap: 16px;
-<<<<<<< HEAD
     margin-left: 24px;
     margin-top: 37px;
 }
@@ -486,6 +485,4 @@
 }
 .padding-Button-Rental:hover{
     background-color: #254BC9;
-=======
->>>>>>> cf88349802c869466de3f67475e71c1389fd74be
 }

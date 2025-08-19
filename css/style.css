@@ -5,11 +5,22 @@
     position: relative;
 }
 /* ----------------Phần Nav-Bar-Top----------------  */
-.Nav-Bar-Top{
+/* .Nav-Bar-Top{
     width:1440px;
     height:124px;
     display: flex;
     align-items: center;
+    padding-left: 60px;
+    padding-right: 32px;
+} */
+
+/* Navbar mặc định (PC/Laptop) */
+.Nav-Bar-Top {
+    width: 1440px;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo bên trái, search giữa, profile bên phải */
     padding-left: 60px;
     padding-right: 32px;
 }
@@ -51,6 +62,7 @@
 }
 .Profil-and-Notification{
     position: relative;
+    right: 50px;
     margin-left: 408px;
     width: 236px;
     height: 44px;
@@ -61,7 +73,7 @@
     width: 44px;
     height: 44px;
 }
-    /* Phần content */
+    /* ------------- Phần content-------- */
 .container-Content{
     width:1440px;
     height: 2120px;
@@ -696,4 +708,89 @@
 }
 .line-Footer{
     width :1320px;
+}
+
+
+/* Mobile layout */
+@media (max-width :768px) {
+
+    body{
+        transform: scale(0.9); /* thu nhỏ toàn bộ, kể cả chữ */
+    }
+    .Home-car-Rent{
+        width: 375px;
+    }
+    .Nav-Bar-Top {
+        flex-direction: column;   /* xếp dọc */
+        align-items: center;  /* canh trái */
+        justify-content: space-between ;
+        height: auto;
+        padding: 16px;
+        width: 375px;
+        margin-left: 410px;
+    }
+
+    .search {
+        margin-left: 74px;
+        margin-top: 16px;  /* đẩy search box xuống dưới logo */
+        width: 263px;
+        height: 48px;       /* search full width */
+        border-radius: 10px;
+        gap: 250px;
+    }
+    .search-something{
+        position: absolute;
+        font-size: 14px;
+        color: #90A3BF;
+        width :160px;
+        height: 24px;
+        margin-left: 54px;
+    }
+    .logo{
+        font-size: 24px;
+
+    }
+    .search-filter{
+        padding: 12px;
+        border :1px solid;
+        border-radius: 10px;
+    }
+    .Profil-and-Notification {
+        position: absolute;
+        margin-top: 24px;
+        left: 430px;       /* avatar + icon vẫn ở góc trên phải */
+
+    }
+
+    .Ads1{
+        width: 327px;
+        height: 232px;
+        margin-top: 32px;
+        margin-left: -25px;
+    }
+    .Ads2,.line,
+    .like,
+    .Notification,
+    .settings{
+        display: none;
+    }
+    .Drop-Pick-Switch{
+        display: flex;
+        flex-direction: column;
+    }
+    .Pick-Up-Containt,
+.Drop-Off-Containt{
+    width: 407px;
+}
+.Pick-Up-Infor,
+.Drop-Off-Infor{
+    gap: 24px;
+    margin-left: -40px;
+    
+}
+.Pick-Up,
+.Drop-Off{
+    margin-left: -40px;
+   
+}
 }

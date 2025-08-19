@@ -262,6 +262,7 @@
     width :582px;
     height: 132px;
     background-color: #FFFFFF;
+    border-radius: 10px;
     /* gap: 8px; */
     
 }
@@ -380,6 +381,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
  }
  .Popular{
     display: flex;
@@ -406,6 +408,7 @@
     width :304px;
     height: 388px;
     background-color: #FFFFFF;
+    border-radius: 10px;
 }
 
 .heart{
@@ -494,6 +497,7 @@
     font: normal 600 16px 'Plus Jakarta Sans';
     color: #FFFFFF;
     cursor: pointer;
+    border-radius: 4px;
 }
 .background-Button-Rental:hover{
     background-color: #254BC9;
@@ -553,6 +557,7 @@
 .Catalog4-Recomen1{
     width: 304px;
     background-color: #FFFFFF;
+    border-radius: 10px;
 }
 .Catalog1-Recomen2,
 .Catalog2-Recomen2,
@@ -560,6 +565,7 @@
 .Catalog4-Recomen2{
     width: 304px;
     background-color: #FFFFFF;
+    border-radius: 10px;
 }
 .image-catalog-Recomen1{
     width: 224;
@@ -611,6 +617,7 @@
     font: normal 600 16px 'Plus Jakarta Sans';
     border: 0;
     cursor: pointer;
+    border-radius: 4px;
 }
 .background-Show-More:hover{
     background-color: #254BC9;

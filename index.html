@@ -12,7 +12,7 @@
 <body>
     <div class="Home-car-Rent">
                                  <!-- phần Nav Bar Top -->
-        <div class="Nav-Bar-Top">
+        <nav class="Nav-Bar-Top">
             <div class="logo">
                 <p>MORENT</p>
             </div>
@@ -27,9 +27,9 @@
                 <img src="img/Settings.png" alt="settings" class="settings">
                 <img src="img/Profil.png" alt="Profil" class="Profil">
             </div>
-        </div>
-                                <!-- Phần content -->
-        <div class="container-Content">
+        </nav>
+            <!-- ---------------Phần Content--------------------- -->
+        <main class="container-Content">
             <div class="Content">
                 <div class="Advertisement">
                     <div class="Ads1">
@@ -99,117 +99,269 @@
                             </div>
                         </div>
                     </div>
-                    </div>
-                    <div class="Drop-Pick-Switch">
-                        <div class="Pick-Up-Containt">
-                            <div class="Pick-Up">
-                                <div class="background-mark"><div class="mark"></div></div>
-                                <p id="Pick-Up">Pick - Up</p>
-                            </div>
-                            <div class="Pick-Up-Infor">
-                                <div class="Location">
-                                    <label class="Loca">Locations</label>
-                                    <select id="city" name="city">
-                                        <option value="">Select your city</option>
-                                        <option value="hanoi">Hà Nội</option>
-                                        <option value="hcm">TP. Hồ Chí Minh</option>
-                                        <option value="danang">Đà Nẵng</option>
-                                        <option value="cantho">Cần Thơ</option>
-                                    </select>
-                                </div>
-                                <div class="line"></div>
-                                <div class="DATE">
-                                    <label class="date">Date</label>
-                                    <select id="Date" name="city">
-                                        <option value="">Select your date</option>
-                                        <option value="">1 day</option>
-                                        <option value="">2 days</option>
-                                        <option value="">3 days</option>
-                                        <option value="">a week</option>
-                                    </select>
-                                </div>
-                                <div class="line"></div>
-                                <div class="TIME">
-                                    <label class="time">Time</label>
-                                    <select id="Time" name="city">
-                                        <option value="">Select your time</option>
-                                        <option value="">3 hours</option>
-                                        <option value="">6 hours</option>
-                                        <option value="">12 hours</option>
-                                        <option value="">24 hours</option>
-                                    </select>
-                                </div>
-                            </div>
+                </div>
+                <div class="Drop-Pick-Switch">
+                    <div class="Pick-Up-Containt">
+                        <div class="Pick-Up">
+                            <div class="background-mark"><div class="mark"></div></div>
+                            <p id="Pick-Up">Pick - Up</p>
                         </div>
-                        <button class="container-Switch">
-                            <img src="img/Swap.png" alt="swap" class="swap">
-                        </button>
-                        <div class="Drop-Off-Containt">
-                            <div class="Drop-Off">
-                                <div class="background-mark"><div class="mark-Drop-Off"></div></div>
-                                <p id="Drop-Off">Drop - Up</p>
+                        <div class="Pick-Up-Infor">
+                            <div class="Location">
+                                <label class="Loca">Locations</label>
+                                <select id="city" name="city">
+                                    <option value="">Select your city</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hcm">TP. Hồ Chí Minh</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="cantho">Cần Thơ</option>
+                                </select>
                             </div>
-                            <div class="Drop-Off-Infor">
-                                <div class="Location">
-                                    <label class="Loca">Locations</label>
-                                    <select id="city" name="city">
-                                        <option value="">Select your city</option>
-                                        <option value="hanoi">Hà Nội</option>
-                                        <option value="hcm">TP. Hồ Chí Minh</option>
-                                        <option value="danang">Đà Nẵng</option>
-                                        <option value="cantho">Cần Thơ</option>
-                                    </select>
-                                </div>
-                                <div class="line"></div>
-                                <div class="DATE">
-                                    <label class="date">Date</label>
-                                    <select id="Date" name="city">
-                                        <option value="">Select your date</option>
-                                        <option value="">1 day</option>
-                                        <option value="">2 days</option>
-                                        <option value="">3 days</option>
-                                        <option value="">a week</option>
-                                    </select>
-                                </div>
-                                <div class="line"></div>
-                                <div class="TIME">
-                                    <label class="time">Time</label>
-                                    <select id="Time" name="city">
-                                        <option value="">Select your time</option>
-                                        <option value="">3 hours</option>
-                                        <option value="">6 hours</option>
-                                        <option value="">12 hours</option>
-                                        <option value="">24 hours</option>
-                                    </select>
-                                </div>
+                            <div class="line"></div>
+                            <div class="DATE">
+                                <label class="date">Date</label>
+                                <select id="Date" name="city">
+                                    <option value="">Select your date</option>
+                                    <option value="">1 day</option>
+                                    <option value="">2 days</option>
+                                    <option value="">3 days</option>
+                                    <option value="">a week</option>
+                                </select>
+                            </div>
+                            <div class="line"></div>
+                            <div class="TIME">
+                                <label class="time">Time</label>
+                                <select id="Time" name="city">
+                                    <option value="">Select your time</option>
+                                    <option value="">3 hours</option>
+                                    <option value="">6 hours</option>
+                                    <option value="">12 hours</option>
+                                    <option value="">24 hours</option>
+                                </select>
                             </div>
                         </div>
                     </div>
+                    <button class="container-Switch">
+                        <img src="img/Swap.png" alt="swap" class="swap">
+                    </button>
+                    <div class="Drop-Off-Containt">
+                        <div class="Drop-Off">
+                            <div class="background-mark"><div class="mark-Drop-Off"></div></div>
+                            <p id="Drop-Off">Drop - Up</p>
+                        </div>
+                        <div class="Drop-Off-Infor">
+                            <div class="Location">
+                                <label class="Loca">Locations</label>
+                                <select id="city" name="city">
+                                    <option value="">Select your city</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hcm">TP. Hồ Chí Minh</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="cantho">Cần Thơ</option>
+                                </select>
+                            </div>
+                            <div class="line"></div>
+                            <div class="DATE">
+                                <label class="date">Date</label>
+                                <select id="Date" name="city">
+                                    <option value="">Select your date</option>
+                                    <option value="">1 day</option>
+                                    <option value="">2 days</option>
+                                    <option value="">3 days</option>
+                                    <option value="">a week</option>
+                                </select>
+                            </div>
+                            <div class="line"></div>
+                            <div class="TIME">
+                                <label class="time">Time</label>
+                                <select id="Time" name="city">
+                                    <option value="">Select your time</option>
+                                    <option value="">3 hours</option>
+                                    <option value="">6 hours</option>
+                                    <option value="">12 hours</option>
+                                    <option value="">24 hours</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="Catalogue-Car">
-                        <div class="Popular-Car-Rent">
-                            <div class="Popular">
-                                <div class="background-Popular">
-                                    <p class="Popular-Car">Popular Car</p>
-                                </div>
-                                <div class="background-View">
-                                    <p class="View">View All</p>
-                                </div>
+                <div class="Catalogue-Car">
+                    <div class="Popular-Car-Rent">
+                        <div class="Popular">
+                            <div class="background-Popular">
+                                <p class="Popular-Car">Popular Car</p>
                             </div>
-                            <div class="Popular-Car-List">
-                                <div class="Catalog1">
-                                    <img src="img/heart.png" alt="" class="heart">
-                                    
-                                    <div class="Name-Car">
-                                        <p class="Name">Koenigsegg</p>
-                                        <p class="Type-Car">Sport</p>
+                            <div class="background-View">
+                                <p class="View">View All</p>
+                            </div>
+                        </div>
+                        <div class="Popular-Car-List">
+                            <div class="Catalog1">
+                                <img src="img/heart.png" alt="" class="heart">
+                                
+                                <div class="Name-Car">
+                                    <p class="Name">Koenigsegg</p>
+                                    <p class="Type-Car">Sport</p>
+                                </div>
+                                <img src="img/image 7.png" alt="" class="image-catalog1">
+                                <div class="Shadow"></div>
+                                <div class="Spesifitation">
+                                    <div class="Gasoline">
+                                        <img src="img/gas-station.png" alt="gas-station" class="gas-station">
+                                        <p class="volume">90L</p>
                                     </div>
-                                    <img src="img/image 7.png" alt="" class="image-catalog1">
+                                    <div class="Car">
+                                        <img src="img/Car.png" alt="Car" class="Car-Manual">
+                                        <p class="Manual">Manual</p>
+                                    </div>
+                                    <div class="Capacity">
+                                        <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
+                                        <p class="people">2 People</p>
+                                    </div>
+                                </div>
+                                    <div class="Price-Rental-Catalog1">
+                                        <div class="Price">
+                                            <p class="price">$99.00/</p>
+                                            <p class="per-day"> day</p>
+                                        </div>
+                                        <button class="background-Button-Rental">
+                                          Rent Now
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="Catalog2">
+                                
+                                <img src="img/heart.png" alt="" class="heart">
+                                
+                                <div class="Name-Car">
+                                    <p class="Name">Nissan GT - R</p>
+                                    <p class="Type-Car">Sport</p>
+                                </div>
+                                <img src="img/image 8.png" alt="" class="image-catalog2">
+                                <div class="Shadow"></div>
+                                <div class="Spesifitation">
+                                    <div class="Gasoline">
+                                        <img src="img/gas-station.png" alt="gas-station" class="gas-station">
+                                        <p class="volume">80L</p>
+                                    </div>
+                                    <div class="Car">
+                                        <img src="img/Car.png" alt="Car" class="Car-Manual">
+                                        <p class="Manual">Manual</p>
+                                    </div>
+                                    <div class="Capacity">
+                                        <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
+                                        <p class="people">2 People</p>
+                                    </div>
+                                </div>
+                                    <div class="Price-Rental-Catalog2">
+                                        <div class="Price-Catalog2">
+                                            <div class="Sale-Price">
+                                                <p class="price">$99.00/</p>
+                                                <p class="per-day"> day</p>
+                                            </div>
+                                            <div class="Original-Price">
+                                                <del>$100.00</del>
+                                            </div>
+                                        </div>
+                                        <button class="background-Button-Rental">
+                                          Rent Now
+                                        </button>
+                                    </div>
+                            </div>
+                        
+                            <div class="Catalog3">
+                                <img src="img/heart.png" alt="" class="heart">
+                                
+                                <div class="Name-Car">
+                                    <p class="Name">Rolls - Royce</p>
+                                    <p class="Type-Car">Sedan</p>
+                                </div>
+                                <img src="img/Car-Catalog3.png" alt="" class="image-catalog3">
+                                <div class="Shadow"></div>
+                                <div class="Spesifitation">
+                                    <div class="Gasoline">
+                                        <img src="img/gas-station.png" alt="gas-station" class="gas-station">
+                                        <p class="volume">70L</p>
+                                    </div>
+                                    <div class="Car">
+                                        <img src="img/Car.png" alt="Car" class="Car-Manual">
+                                        <p class="Manual">Manual</p>
+                                    </div>
+                                    <div class="Capacity">
+                                        <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
+                                        <p class="people">4 People</p>
+                                    </div>
+                                </div>
+                                    <div class="Price-Rental-Catalog1">
+                                        <div class="Price">
+                                            <p class="price">$96.00/</p>
+                                            <p class="per-day"> day</p>
+                                        </div>
+                                        <button class="background-Button-Rental">
+                                          Rent Now
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="Catalog4">
+                                <img src="img/heart.png" alt="" class="heart">
+                                
+                                <div class="Name-Car">
+                                    <p class="Name">Nissan GT - R</p>
+                                    <p class="Type-Car">Sport</p>
+                                </div>
+                                <img src="img/image 8.png" alt="" class="image-catalog4">
+                                <div class="Shadow"></div>
+                                <div class="Spesifitation">
+                                    <div class="Gasoline">
+                                        <img src="img/gas-station.png" alt="gas-station" class="gas-station">
+                                        <p class="volume">80L</p>
+                                    </div>
+                                    <div class="Car">
+                                        <img src="img/Car.png" alt="Car" class="Car-Manual">
+                                        <p class="Manual">Manual</p>
+                                    </div>
+                                    <div class="Capacity">
+                                        <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
+                                        <p class="people">2 People</p>
+                                    </div>
+                                </div>
+                                    <div class="Price-Rental-Catalog2">
+                                        <div class="Price-Catalog2">
+                                            <div class="Sale-Price">
+                                                <p class="price">$99.00/</p>
+                                                <p class="per-day"> day</p>
+                                            </div>
+                                            <div class="Original-Price">
+                                                <del>$100.00</del>
+                                            </div>
+                                        </div>
+                                        <button class="background-Button-Rental">
+                                          Rent Now
+                                        </button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Recomendation-Car-Rent">
+                        <div class="background-Recomendation">
+                            <p class="Recomendation">Recomendation Car</p>
+                        </div>
+                        <div class="Recomendation-Car">
+                            <div class="Recomendation1">
+                                <div class="Catalog1-Recomen1">
+                                    <img src="img/heart.png" alt="" class="heart">
+                                
+                                    <div class="Name-Car">
+                                        <p class="Name">All New Rush</p>
+                                        <p class="Type-Car">SUV</p>
+                                    </div>
+                                    <img src="img/Car-Catalog1-Recomen1.png " alt="" class="image-catalog-Recomen1">
                                     <div class="Shadow"></div>
                                     <div class="Spesifitation">
                                         <div class="Gasoline">
                                             <img src="img/gas-station.png" alt="gas-station" class="gas-station">
-                                            <p class="volume">90L</p>
+                                            <p class="volume">70L</p>
                                         </div>
                                         <div class="Car">
                                             <img src="img/Car.png" alt="Car" class="Car-Manual">
@@ -217,28 +369,32 @@
                                         </div>
                                         <div class="Capacity">
                                             <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                            <p class="people">2 People</p>
+                                            <p class="people">6 People</p>
                                         </div>
                                     </div>
-                                        <div class="Price-Rental-Catalog1">
-                                            <div class="Price">
-                                                <p class="price">$99.00/</p>
-                                                <p class="per-day"> day</p>
+                                        <div class="Price-Rental-Catalog-Recomen">
+                                            <div class="Price-Catalog-Recomen">
+                                                <div class="Sale-Price">
+                                                    <p class="price">$72.00/</p>
+                                                    <p class="per-day"> day</p>
+                                                </div>
+                                                <div class="Original-Price">
+                                                    <del>$80.00</del>
+                                                </div>
                                             </div>
                                             <button class="background-Button-Rental">
-                                              Rent Now
+                                            Rent Now
                                             </button>
                                         </div>
                                 </div>
-                                <div class="Catalog2">
-                                    
+                                <div class="Catalog2-Recomen1">
                                     <img src="img/heart.png" alt="" class="heart">
-                                    
+                                
                                     <div class="Name-Car">
-                                        <p class="Name">Nissan GT - R</p>
-                                        <p class="Type-Car">Sport</p>
+                                        <p class="Name">CR  - V</p>
+                                        <p class="Type-Car">SUV</p>
                                     </div>
-                                    <img src="img/image 8.png" alt="" class="image-catalog2">
+                                    <img src="img/Car-Catalog2-Recomen1.png " alt="" class="image-catalog-Recomen1">
                                     <div class="Shadow"></div>
                                     <div class="Spesifitation">
                                         <div class="Gasoline">
@@ -251,33 +407,101 @@
                                         </div>
                                         <div class="Capacity">
                                             <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                            <p class="people">2 People</p>
+                                            <p class="people">6 People</p>
                                         </div>
                                     </div>
-                                        <div class="Price-Rental-Catalog2">
-                                            <div class="Price-Catalog2">
+                                        <div class="Price-Rental-Catalog-Recomen">
+                                            <div class="Price-Catalog-Recomen">
                                                 <div class="Sale-Price">
-                                                    <p class="price">$99.00/</p>
+                                                    <p class="price">$80.00/</p>
                                                     <p class="per-day"> day</p>
-                                                </div>
-                                                <div class="Original-Price">
-                                                    <del>$100.00</del>
                                                 </div>
                                             </div>
                                             <button class="background-Button-Rental">
-                                              Rent Now
+                                            Rent Now
                                             </button>
                                         </div>
                                 </div>
-                            
-                                <div class="Catalog3">
+                                <div class="Catalog3-Recomen1">
                                     <img src="img/heart.png" alt="" class="heart">
-                                    
+                                
                                     <div class="Name-Car">
-                                        <p class="Name">Rolls - Royce</p>
-                                        <p class="Type-Car">Sedan</p>
+                                        <p class="Name">All New Terios</p>
+                                        <p class="Type-Car">SUV</p>
                                     </div>
-                                    <img src="img/Car-Catalog3.png" alt="" class="image-catalog3">
+                                    <img src="img/Car-Catalog3-Recomen1.png " alt="" class="image-catalog-Recomen1">
+                                    <div class="Shadow"></div>
+                                    <div class="Spesifitation">
+                                        <div class="Gasoline">
+                                            <img src="img/gas-station.png" alt="gas-station" class="gas-station">
+                                            <p class="volume">90L</p>
+                                        </div>
+                                        <div class="Car">
+                                            <img src="img/Car.png" alt="Car" class="Car-Manual">
+                                            <p class="Manual">Manual</p>
+                                        </div>
+                                        <div class="Capacity">
+                                            <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
+                                            <p class="people">6 People</p>
+                                        </div>
+                                    </div>
+                                        <div class="Price-Rental-Catalog-Recomen">
+                                            <div class="Price-Catalog-Recomen">
+                                                <div class="Sale-Price">
+                                                    <p class="price">$74.00/</p>
+                                                    <p class="per-day"> day</p>
+                                                </div>
+                                            </div>
+                                            <button class="background-Button-Rental">
+                                            Rent Now
+                                            </button>
+                                        </div>
+                                </div>
+                                <div class="Catalog4-Recomen1">
+                                    <img src="img/heart.png" alt="" class="heart">
+                                
+                                    <div class="Name-Car">
+                                        <p class="Name">CR  - V</p>
+                                        <p class="Type-Car">SUV</p>
+                                    </div>
+                                    <img src="img/Car-Catalog4-Recomen1.png " alt="" class="image-catalog-Recomen1">
+                                    <div class="Shadow"></div>
+                                    <div class="Spesifitation">
+                                        <div class="Gasoline">
+                                            <img src="img/gas-station.png" alt="gas-station" class="gas-station">
+                                            <p class="volume">80L</p>
+                                        </div>
+                                        <div class="Car">
+                                            <img src="img/Car.png" alt="Car" class="Car-Manual">
+                                            <p class="Manual">Manual</p>
+                                        </div>
+                                        <div class="Capacity">
+                                            <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
+                                            <p class="people">6 People</p>
+                                        </div>
+                                    </div>
+                                        <div class="Price-Rental-Catalog-Recomen">
+                                            <div class="Price-Catalog-Recomen">
+                                                <div class="Sale-Price">
+                                                    <p class="price">$80.00/</p>
+                                                    <p class="per-day"> day</p>
+                                                </div>
+                                            </div>
+                                            <button class="background-Button-Rental">
+                                            Rent Now
+                                            </button>
+                                        </div>
+                                </div>
+                            </div>
+                             <div class="Recomendation2">
+                                <div class="Catalog1-Recomen2">
+                                    <img src="img/heart.png" alt="" class="heart">
+                                
+                                    <div class="Name-Car">
+                                        <p class="Name">MG ZX Exclusice</p>
+                                        <p class="Type-Car">Hatchback</p>
+                                    </div>
+                                    <img src="img/Car-Catalog1-Recomen2.png " alt="" class="image-catalog-Recomen2">
                                     <div class="Shadow"></div>
                                     <div class="Spesifitation">
                                         <div class="Gasoline">
@@ -293,24 +517,29 @@
                                             <p class="people">4 People</p>
                                         </div>
                                     </div>
-                                        <div class="Price-Rental-Catalog1">
-                                            <div class="Price">
-                                                <p class="price">$96.00/</p>
-                                                <p class="per-day"> day</p>
+                                        <div class="Price-Rental-Catalog-Recomen">
+                                            <div class="Price-Catalog-Recomen">
+                                                <div class="Sale-Price">
+                                                    <p class="price">$76.00/</p>
+                                                    <p class="per-day"> day</p>
+                                                </div>
+                                                <div class="Original-Price">
+                                                    <del>$80.00</del>
+                                                </div>
                                             </div>
                                             <button class="background-Button-Rental">
-                                              Rent Now
+                                            Rent Now
                                             </button>
                                         </div>
                                 </div>
-                                <div class="Catalog4">
+                                <div class="Catalog2-Recomen2">
                                     <img src="img/heart.png" alt="" class="heart">
-                                    
+                                
                                     <div class="Name-Car">
-                                        <p class="Name">Nissan GT - R</p>
-                                        <p class="Type-Car">Sport</p>
+                                        <p class="Name">New MG ZS</p>
+                                        <p class="Type-Car">SUV</p>
                                     </div>
-                                    <img src="img/image 8.png" alt="" class="image-catalog4">
+                                    <img src="img/Car-Catalog2-Recomen2.png " alt="" class="image-catalog-Recomen2">
                                     <div class="Shadow"></div>
                                     <div class="Spesifitation">
                                         <div class="Gasoline">
@@ -323,331 +552,101 @@
                                         </div>
                                         <div class="Capacity">
                                             <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                            <p class="people">2 People</p>
+                                            <p class="people">6 People</p>
                                         </div>
                                     </div>
-                                        <div class="Price-Rental-Catalog2">
-                                            <div class="Price-Catalog2">
+                                        <div class="Price-Rental-Catalog-Recomen">
+                                            <div class="Price-Catalog-Recomen">
                                                 <div class="Sale-Price">
-                                                    <p class="price">$99.00/</p>
+                                                    <p class="price">$80.00/</p>
                                                     <p class="per-day"> day</p>
-                                                </div>
-                                                <div class="Original-Price">
-                                                    <del>$100.00</del>
                                                 </div>
                                             </div>
                                             <button class="background-Button-Rental">
-                                              Rent Now
+                                            Rent Now
                                             </button>
                                         </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="Recomendation-Car-Rent">
-                            <div class="background-Recomendation">
-                                <p class="Recomendation">Recomendation Car</p>
-                            </div>
-
-                            <div class="Recomendation-Car">
-                                <div class="Recomendation1">
-                                    <div class="Catalog1-Recomen1">
-                                        <img src="img/heart.png" alt="" class="heart">
-                                    
-                                        <div class="Name-Car">
-                                            <p class="Name">All New Rush</p>
-                                            <p class="Type-Car">SUV</p>
-                                        </div>
-                                        <img src="img/Car-Catalog1-Recomen1.png " alt="" class="image-catalog-Recomen1">
-                                        <div class="Shadow"></div>
-                                        <div class="Spesifitation">
-                                            <div class="Gasoline">
-                                                <img src="img/gas-station.png" alt="gas-station" class="gas-station">
-                                                <p class="volume">70L</p>
-                                            </div>
-                                            <div class="Car">
-                                                <img src="img/Car.png" alt="Car" class="Car-Manual">
-                                                <p class="Manual">Manual</p>
-                                            </div>
-                                            <div class="Capacity">
-                                                <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                                <p class="people">6 People</p>
-                                            </div>
-                                        </div>
-                                            <div class="Price-Rental-Catalog-Recomen">
-                                                <div class="Price-Catalog-Recomen">
-                                                    <div class="Sale-Price">
-                                                        <p class="price">$72.00/</p>
-                                                        <p class="per-day"> day</p>
-                                                    </div>
-                                                    <div class="Original-Price">
-                                                        <del>$80.00</del>
-                                                    </div>
-                                                </div>
-                                                <button class="background-Button-Rental">
-                                                Rent Now
-                                                </button>
-                                            </div>
+                                <div class="Catalog3-Recomen2">
+                                    <img src="img/heart.png" alt="" class="heart">
+                                
+                                    <div class="Name-Car">
+                                        <p class="Name">MG ZX Excite</p>
+                                        <p class="Type-Car">Hatchback</p>
                                     </div>
-                                    <div class="Catalog2-Recomen1">
-                                        <img src="img/heart.png" alt="" class="heart">
-                                    
-                                        <div class="Name-Car">
-                                            <p class="Name">CR  - V</p>
-                                            <p class="Type-Car">SUV</p>
+                                    <img src="img/Car-Catalog3-Recomen2.png " alt="" class="image-catalog-Recomen2">
+                                    <div class="Shadow"></div>
+                                    <div class="Spesifitation">
+                                        <div class="Gasoline">
+                                            <img src="img/gas-station.png" alt="gas-station" class="gas-station">
+                                            <p class="volume">90L</p>
                                         </div>
-                                        <img src="img/Car-Catalog2-Recomen1.png " alt="" class="image-catalog-Recomen1">
-                                        <div class="Shadow"></div>
-                                        <div class="Spesifitation">
-                                            <div class="Gasoline">
-                                                <img src="img/gas-station.png" alt="gas-station" class="gas-station">
-                                                <p class="volume">80L</p>
-                                            </div>
-                                            <div class="Car">
-                                                <img src="img/Car.png" alt="Car" class="Car-Manual">
-                                                <p class="Manual">Manual</p>
-                                            </div>
-                                            <div class="Capacity">
-                                                <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                                <p class="people">6 People</p>
-                                            </div>
+                                        <div class="Car">
+                                            <img src="img/Car.png" alt="Car" class="Car-Manual">
+                                            <p class="Manual">Manual</p>
                                         </div>
-                                            <div class="Price-Rental-Catalog-Recomen">
-                                                <div class="Price-Catalog-Recomen">
-                                                    <div class="Sale-Price">
-                                                        <p class="price">$80.00/</p>
-                                                        <p class="per-day"> day</p>
-                                                    </div>
-                                                </div>
-                                                <button class="background-Button-Rental">
-                                                Rent Now
-                                                </button>
-                                            </div>
+                                        <div class="Capacity">
+                                            <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
+                                            <p class="people">4 People</p>
+                                        </div>
                                     </div>
-                                    <div class="Catalog3-Recomen1">
-                                        <img src="img/heart.png" alt="" class="heart">
-                                    
-                                        <div class="Name-Car">
-                                            <p class="Name">All New Terios</p>
-                                            <p class="Type-Car">SUV</p>
-                                        </div>
-                                        <img src="img/Car-Catalog3-Recomen1.png " alt="" class="image-catalog-Recomen1">
-                                        <div class="Shadow"></div>
-                                        <div class="Spesifitation">
-                                            <div class="Gasoline">
-                                                <img src="img/gas-station.png" alt="gas-station" class="gas-station">
-                                                <p class="volume">90L</p>
-                                            </div>
-                                            <div class="Car">
-                                                <img src="img/Car.png" alt="Car" class="Car-Manual">
-                                                <p class="Manual">Manual</p>
-                                            </div>
-                                            <div class="Capacity">
-                                                <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                                <p class="people">6 People</p>
-                                            </div>
-                                        </div>
-                                            <div class="Price-Rental-Catalog-Recomen">
-                                                <div class="Price-Catalog-Recomen">
-                                                    <div class="Sale-Price">
-                                                        <p class="price">$74.00/</p>
-                                                        <p class="per-day"> day</p>
-                                                    </div>
+                                        <div class="Price-Rental-Catalog-Recomen">
+                                            <div class="Price-Catalog-Recomen">
+                                                <div class="Sale-Price">
+                                                    <p class="price">$74.00/</p>
+                                                    <p class="per-day"> day</p>
                                                 </div>
-                                                <button class="background-Button-Rental">
-                                                Rent Now
-                                                </button>
                                             </div>
-                                    </div>
-                                    <div class="Catalog4-Recomen1">
-                                        <img src="img/heart.png" alt="" class="heart">
-                                    
-                                        <div class="Name-Car">
-                                            <p class="Name">CR  - V</p>
-                                            <p class="Type-Car">SUV</p>
+                                            <button class="background-Button-Rental">
+                                            Rent Now
+                                            </button>
                                         </div>
-                                        <img src="img/Car-Catalog4-Recomen1.png " alt="" class="image-catalog-Recomen1">
-                                        <div class="Shadow"></div>
-                                        <div class="Spesifitation">
-                                            <div class="Gasoline">
-                                                <img src="img/gas-station.png" alt="gas-station" class="gas-station">
-                                                <p class="volume">80L</p>
-                                            </div>
-                                            <div class="Car">
-                                                <img src="img/Car.png" alt="Car" class="Car-Manual">
-                                                <p class="Manual">Manual</p>
-                                            </div>
-                                            <div class="Capacity">
-                                                <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                                <p class="people">6 People</p>
-                                            </div>
-                                        </div>
-                                            <div class="Price-Rental-Catalog-Recomen">
-                                                <div class="Price-Catalog-Recomen">
-                                                    <div class="Sale-Price">
-                                                        <p class="price">$80.00/</p>
-                                                        <p class="per-day"> day</p>
-                                                    </div>
-                                                </div>
-                                                <button class="background-Button-Rental">
-                                                Rent Now
-                                                </button>
-                                            </div>
-                                    </div>
                                 </div>
-                                 <div class="Recomendation2">
-                                    <div class="Catalog1-Recomen2">
-                                        <img src="img/heart.png" alt="" class="heart">
-                                    
-                                        <div class="Name-Car">
-                                            <p class="Name">MG ZX Exclusice</p>
-                                            <p class="Type-Car">Hatchback</p>
-                                        </div>
-                                        <img src="img/Car-Catalog1-Recomen2.png " alt="" class="image-catalog-Recomen2">
-                                        <div class="Shadow"></div>
-                                        <div class="Spesifitation">
-                                            <div class="Gasoline">
-                                                <img src="img/gas-station.png" alt="gas-station" class="gas-station">
-                                                <p class="volume">70L</p>
-                                            </div>
-                                            <div class="Car">
-                                                <img src="img/Car.png" alt="Car" class="Car-Manual">
-                                                <p class="Manual">Manual</p>
-                                            </div>
-                                            <div class="Capacity">
-                                                <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                                <p class="people">4 People</p>
-                                            </div>
-                                        </div>
-                                            <div class="Price-Rental-Catalog-Recomen">
-                                                <div class="Price-Catalog-Recomen">
-                                                    <div class="Sale-Price">
-                                                        <p class="price">$76.00/</p>
-                                                        <p class="per-day"> day</p>
-                                                    </div>
-                                                    <div class="Original-Price">
-                                                        <del>$80.00</del>
-                                                    </div>
-                                                </div>
-                                                <button class="background-Button-Rental">
-                                                Rent Now
-                                                </button>
-                                            </div>
+                                <div class="Catalog4-Recomen2">
+                                    <img src="img/heart.png" alt="" class="heart">
+                                
+                                    <div class="Name-Car">
+                                        <p class="Name">New MG ZS</p>
+                                        <p class="Type-Car">SUV</p>
                                     </div>
-                                    <div class="Catalog2-Recomen2">
-                                        <img src="img/heart.png" alt="" class="heart">
-                                    
-                                        <div class="Name-Car">
-                                            <p class="Name">New MG ZS</p>
-                                            <p class="Type-Car">SUV</p>
+                                    <img src="img/Car-Catalog4-Recomen2.png " alt="" class="image-catalog-Recomen2">
+                                    <div class="Shadow"></div>
+                                    <div class="Spesifitation">
+                                        <div class="Gasoline">
+                                            <img src="img/gas-station.png" alt="gas-station" class="gas-station">
+                                            <p class="volume">80L</p>
                                         </div>
-                                        <img src="img/Car-Catalog2-Recomen2.png " alt="" class="image-catalog-Recomen2">
-                                        <div class="Shadow"></div>
-                                        <div class="Spesifitation">
-                                            <div class="Gasoline">
-                                                <img src="img/gas-station.png" alt="gas-station" class="gas-station">
-                                                <p class="volume">80L</p>
-                                            </div>
-                                            <div class="Car">
-                                                <img src="img/Car.png" alt="Car" class="Car-Manual">
-                                                <p class="Manual">Manual</p>
-                                            </div>
-                                            <div class="Capacity">
-                                                <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                                <p class="people">6 People</p>
-                                            </div>
+                                        <div class="Car">
+                                            <img src="img/Car.png" alt="Car" class="Car-Manual">
+                                            <p class="Manual">Manual</p>
                                         </div>
-                                            <div class="Price-Rental-Catalog-Recomen">
-                                                <div class="Price-Catalog-Recomen">
-                                                    <div class="Sale-Price">
-                                                        <p class="price">$80.00/</p>
-                                                        <p class="per-day"> day</p>
-                                                    </div>
-                                                </div>
-                                                <button class="background-Button-Rental">
-                                                Rent Now
-                                                </button>
-                                            </div>
+                                        <div class="Capacity">
+                                            <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
+                                            <p class="people">6 People</p>
+                                        </div>
                                     </div>
-                                    <div class="Catalog3-Recomen2">
-                                        <img src="img/heart.png" alt="" class="heart">
-                                    
-                                        <div class="Name-Car">
-                                            <p class="Name">MG ZX Excite</p>
-                                            <p class="Type-Car">Hatchback</p>
-                                        </div>
-                                        <img src="img/Car-Catalog3-Recomen2.png " alt="" class="image-catalog-Recomen2">
-                                        <div class="Shadow"></div>
-                                        <div class="Spesifitation">
-                                            <div class="Gasoline">
-                                                <img src="img/gas-station.png" alt="gas-station" class="gas-station">
-                                                <p class="volume">90L</p>
-                                            </div>
-                                            <div class="Car">
-                                                <img src="img/Car.png" alt="Car" class="Car-Manual">
-                                                <p class="Manual">Manual</p>
-                                            </div>
-                                            <div class="Capacity">
-                                                <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                                <p class="people">4 People</p>
-                                            </div>
-                                        </div>
-                                            <div class="Price-Rental-Catalog-Recomen">
-                                                <div class="Price-Catalog-Recomen">
-                                                    <div class="Sale-Price">
-                                                        <p class="price">$74.00/</p>
-                                                        <p class="per-day"> day</p>
-                                                    </div>
+                                        <div class="Price-Rental-Catalog-Recomen">
+                                            <div class="Price-Catalog-Recomen">
+                                                <div class="Sale-Price">
+                                                    <p class="price">$80.00/</p>
+                                                    <p class="per-day"> day</p>
                                                 </div>
-                                                <button class="background-Button-Rental">
-                                                Rent Now
-                                                </button>
                                             </div>
-                                    </div>
-                                    <div class="Catalog4-Recomen2">
-                                        <img src="img/heart.png" alt="" class="heart">
-                                    
-                                        <div class="Name-Car">
-                                            <p class="Name">New MG ZS</p>
-                                            <p class="Type-Car">SUV</p>
+                                            <button class="background-Button-Rental">
+                                            Rent Now
+                                            </button>
                                         </div>
-                                        <img src="img/Car-Catalog4-Recomen2.png " alt="" class="image-catalog-Recomen2">
-                                        <div class="Shadow"></div>
-                                        <div class="Spesifitation">
-                                            <div class="Gasoline">
-                                                <img src="img/gas-station.png" alt="gas-station" class="gas-station">
-                                                <p class="volume">80L</p>
-                                            </div>
-                                            <div class="Car">
-                                                <img src="img/Car.png" alt="Car" class="Car-Manual">
-                                                <p class="Manual">Manual</p>
-                                            </div>
-                                            <div class="Capacity">
-                                                <img src="img/profile-2user.png" alt="profile-2user" class="profile-2user">
-                                                <p class="people">6 People</p>
-                                            </div>
-                                        </div>
-                                            <div class="Price-Rental-Catalog-Recomen">
-                                                <div class="Price-Catalog-Recomen">
-                                                    <div class="Sale-Price">
-                                                        <p class="price">$80.00/</p>
-                                                        <p class="per-day"> day</p>
-                                                    </div>
-                                                </div>
-                                                <button class="background-Button-Rental">
-                                                Rent Now
-                                                </button>
-                                            </div>
-                                    </div>
-                                 </div>
-                                 <div class="Show-More">
-                                    <button class="background-Show-More">Show more car</button>
-                                    <div class="Car-quantity">120 cars</div>
-                                 </div>
-                            </div>
+                                </div>
+                             </div>
+                             <div class="Show-More">
+                                <button class="background-Show-More">Show more car</button>
+                                <div class="Car-quantity">120 cars</div>
+                             </div>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
+        </main>
         <footer class="Footer">
             <div class="Footer-top-content">
                 <div class="Container-Footer-logo">

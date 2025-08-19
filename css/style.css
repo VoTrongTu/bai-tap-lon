@@ -399,16 +399,18 @@
     display: flex;
     gap: 32px;
 }
+/* ----------Catalog1--------------- */
 .Catalog1, .Catalog2,.Catalog3,.Catalog4{
     width :304px;
     height: 388px;
     background-color: #FFFFFF;
 }
-.heart{
+.heart-Catalog1{
     position: absolute;
-    padding-top: 24px;
-    padding-left: 256px;
+    margin-top: 24px;
+    margin-left: 256px;
 }
+
 .Name-Car{
     margin-left: 24px;
     margin-top: 24px;
@@ -421,7 +423,7 @@
     font:normal 700 14px 'Plus Jakarta Sans';
     color: #90A3BF;
 }
-.image-catalo1{
+.image-catalo1,.image-catalo2{
     width :232px;
     height: 72px;
     margin-top: 64px;
@@ -450,17 +452,19 @@
     color: #90A3BF;
     line-height: 100%;
 }
-.Price-Rental{
+.Price-Rental-Catalog1,.Price-Rental-Catalog2{
     display: flex;
     gap: 24px;
     align-items: center;
 }
+
 .Price{
     display: flex;
     align-items: baseline;
     gap: 5px;
     margin-left: 24px;
 }
+
 .price{
     font: normal 700 20px 'Plus Jakarta Sans';
     color: #1A202C;
@@ -469,6 +473,7 @@
     font: normal 700 14px 'Plus Jakarta Sans';
     color: #90A3BF;
 }
+
 .padding-Button-Rental{
     position: relative;
     display: flex;
@@ -486,3 +491,28 @@
 .padding-Button-Rental:hover{
     background-color: #254BC9;
 }
+/* ------------Catalog2--------------- */
+.heart-Catalog2{
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 256px;
+}
+.Price-Catalog2{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-top: -20px;
+}
+.Sale-Price{
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+}
+.Original-Price{
+    font: normal 700 14px 'Plus Jakarta Sans';
+    color: #90A3BF;
+    margin-top: -14px;
+}
+/* --------------Catalog3---------------- */
+

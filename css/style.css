@@ -384,7 +384,8 @@
     display: flex;
     gap: 1076px;
  }
- .Popular-Car{
+ .Popular-Car,
+ .Recomendation{
     font: normal 600 16px 'Plus Jakarta Sans';
     line-height:100%;
     color: #90A3BF;
@@ -405,7 +406,8 @@
     height: 388px;
     background-color: #FFFFFF;
 }
-.heart-Catalog1{
+
+.heart{
     position: absolute;
     margin-top: 24px;
     margin-left: 256px;
@@ -423,7 +425,10 @@
     font:normal 700 14px 'Plus Jakarta Sans';
     color: #90A3BF;
 }
-.image-catalo1,.image-catalo2{
+.image-catalog1,
+.image-catalog2,
+.image-catalog3,
+.image-catalog4{
     width :232px;
     height: 72px;
     margin-top: 64px;
@@ -452,7 +457,8 @@
     color: #90A3BF;
     line-height: 100%;
 }
-.Price-Rental-Catalog1,.Price-Rental-Catalog2{
+.Price-Rental-Catalog1,
+.Price-Rental-Catalog2{
     display: flex;
     gap: 24px;
     align-items: center;
@@ -492,17 +498,14 @@
     background-color: #254BC9;
 }
 /* ------------Catalog2--------------- */
-.heart-Catalog2{
-    position: absolute;
-    margin-top: 24px;
-    margin-left: 256px;
-}
+/* --------------Catalog3---------------- */
 .Price-Catalog2{
     display: flex;
+    align-items: center;
     position: relative;
     flex-direction: column;
     margin-left: 24px;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 .Sale-Price{
     display: flex;
@@ -514,5 +517,74 @@
     color: #90A3BF;
     margin-top: -14px;
 }
-/* --------------Catalog3---------------- */
+/* -----------------------Recomendation-Car-Rent--------------- */
+.Recomendation-Car-Rent{
+    display: flex;
+    flex-direction: column;
+    height: 872px;
+    gap: 20px;
+}
+.padding-Recomendation{
+    width:196px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Recomendation-Car{
+    height: 808px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
 
+.Recomendation1,
+.Recomendation2{
+    height: 388px;
+    display: flex;
+    gap: 32px;
+
+}
+.Catalog1-Recomen1,
+.Catalog2-Recomen1,
+.Catalog3-Recomen1,
+.Catalog4-Recomen1{
+    width: 304px;
+    background-color: #FFFFFF;
+}
+.Catalog1-Recomen2,
+.Catalog2-Recomen2,
+.Catalog3-Recomen2,
+.Catalog4-Recomen2{
+    width: 304px;
+    background-color: #FFFFFF;
+}
+.image-catalog-Recomen1{
+    width: 224;
+    height: 100;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: -25px;
+}
+.image-catalog-Recomen2{
+    width: 224;
+    height: 100;
+    margin-top: 50px;
+    margin-left: 4px;
+    margin-bottom: -25px;
+
+}
+.Price-Rental-Catalog-Recomen{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.Price-Catalog-Recomen{
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-top: -10px;
+}

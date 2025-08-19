@@ -273,7 +273,7 @@
     padding-left: 48px;
     /* padding-top: 24px;  */
 }
-.padding-mark{
+.background-mark{
     width: 16px;
     height: 16px;
     border-radius: 70px;
@@ -352,10 +352,11 @@
     justify-content: center;
     margin-top: 36px;
     cursor :pointer;
+    border:0;
 }
-/* .swap::hover{
-    background-color: green;
-} */
+.container-Switch:hover{
+    background-color: #254BC9;
+} 
  /* --------------Catalogue Car----------------- */
 
  .Catalogue-Car{
@@ -373,7 +374,7 @@
     flex-direction: column;
     gap: 20px;
  }
- .padding-Popular,.padding-View{
+ .background-Popular,.background-View{
     width :132px;
     height: 44px;
     display: flex;
@@ -480,7 +481,7 @@
     color: #90A3BF;
 }
 
-.padding-Button-Rental{
+.background-Button-Rental{
     position: relative;
     display: flex;
     align-items: center;
@@ -494,7 +495,7 @@
     color: #FFFFFF;
     cursor: pointer;
 }
-.padding-Button-Rental:hover{
+.background-Button-Rental:hover{
     background-color: #254BC9;
 }
 /* ------------Catalog2--------------- */
@@ -524,7 +525,7 @@
     height: 872px;
     gap: 20px;
 }
-.padding-Recomendation{
+.background-Recomendation{
     width:196px;
     height: 44px;
     display: flex;
@@ -587,4 +588,105 @@
     flex-direction: column;
     margin-left: 24px;
     margin-top: -10px;
+}
+.Show-More{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width:734px;
+    height: 44px;
+    margin-left: 578px;
+    margin-top: 64px;
+    gap: 438px;
+}
+.background-Show-More{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 156px;
+    height: 44px;
+    background-color: #3563E9;
+    color: #FFFFFF;
+    font: normal 600 16px 'Plus Jakarta Sans';
+    border: 0;
+    cursor: pointer;
+}
+.background-Show-More:hover{
+    background-color: #254BC9;
+}
+.Car-quantity{
+    width: 140px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font: normal 500 14px 'Plus Jakarta Sans';
+    color:#90A3BF ;
+    margin-right: 0px;
+}
+/* --------------------Footer---------------- */
+.Footer-top-content{
+    display: flex;
+    gap: 60px;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.Container-Footer-logo{
+    width: 292px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 392px;
+}
+.Logo-Text{
+    font: normal 700 32px 'Plus Jakarta Sans';
+    color: #3563E9;
+    margin-bottom: 0;
+}
+.Content-Logo{
+    width :292px;
+    height: 48px;
+    font: normal 500 16px 'Plus Jakarta Sans';
+    counter-reset: #13131399;
+}
+.Container-About,
+.Container-Community,
+.Container-Socials{
+    width :152px;
+    height: 244px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 24px ;
+}
+.About,
+.Community,
+.Socials{
+    font: normal 600 20px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.Content-About,
+.Content-Community,
+.Content-Socials{
+    height: 188px;
+    font: normal 500 16px 'Plus Jakarta Sans';
+    color: #13131399;
+   line-height: 40px;
+}
+.Footer-bottom-content{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+    display: flex;
+    align-items: center;
+    gap: 725px;
+    margin-left: 60px;
+    margin-top: 36px;
+}
+.Legal-links{
+    display: flex;
+    gap: 60px;
+}
+.line-Footer{
+    width :1320px;
 }

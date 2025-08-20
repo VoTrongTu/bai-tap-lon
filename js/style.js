@@ -46,3 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Log để chắc chắn file JS đã load
   console.log("style.js loaded OK");
 });
+
+// ------------------chuyển về detail web mỗi khi nhấn vào catalog---------------------------//
+    document.querySelectorAll(".detail-catalog").forEach(item => {
+        item.addEventListener("click", () => {
+            window.location.href = "detail.html";
+        });
+    });

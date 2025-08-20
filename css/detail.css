@@ -1,7 +1,8 @@
 /* ------------------------detail-cars--------------------*/
 .detail-layout {
-    width: 100%;
-    min-height: 100vh;
+    width: 1440px;
+    height: 2620px;
+    opacity: 1;
     background: #F6F7F9;
 }
 /*------------------------TOP BAR----------------------*/
@@ -9,7 +10,9 @@
     position: sticky;
     top: 0;         
     z-index: 1000;        
+    width: 1440px;
     height: 124px;
+    opacity: 1;
     border-width: 1px;
     background: #FFFFFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -75,8 +78,6 @@
     padding-left: 32px;
     width: 176px;
     height: 352px;
-    top: 32px;
-    left: 32px;
     opacity: 1;
     gap: 28px;
     display: flex;
@@ -128,11 +129,7 @@
     flex-direction: row;
 }
 .sidebar-car-element{
-    font-family: Plus Jakarta Sans;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 20px;
-    line-height: 150%;
+    font: 600 20px/150% 'Plus Jakarta Sans';
     letter-spacing: -2%;
     text-align: justify;
     vertical-align: middle;
@@ -143,8 +140,6 @@
     width: 176px;
     height: 240px;
     opacity: 1;
-    top: 440px;
-    left: 32px;
     gap: 28px;
     display: flex;
     flex-direction: column;
@@ -155,8 +150,6 @@
     width: 296px;
     height: 104px;
     opacity: 1;
-    top: 736px;
-    left: 32px;
     gap: 28px;
     display: flex;
     flex-direction: column;
@@ -198,11 +191,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 296px;
     height: 24px;
     opacity: 1;
-    font-family: Plus Jakarta Sans;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 20px;
-    line-height: 150%;
+    font: 600 20px/150% 'Plus Jakarta Sans';
     letter-spacing: -2%;
     text-align: justify;
     vertical-align: middle;
@@ -213,6 +202,7 @@ input[type="range"]::-webkit-slider-thumb {
     height: auto;
     margin-top: 32px;
     margin-left: 32px;
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -242,11 +232,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 372px;
     height: 96px;
     opacity: 1;
-    font-family: Plus Jakarta Sans;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 32px;
-    line-height: 150%;
+    font:  600 32px/150% 'Plus Jakarta Sans';
     letter-spacing: -3%;
     vertical-align: middle;
 }
@@ -256,11 +242,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 284px;
     height: 48px;
     opacity: 1;
-    font-family: Plus Jakarta Sans;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 16px;
-    line-height: 150%;
+    font: 500 16px/150% 'Plus Jakarta Sans';
     letter-spacing: -2%;
     vertical-align: middle;
     color: #FFFFFF;
@@ -335,11 +317,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 220px;
     height: 40px;
     opacity: 1;
-    font-family: Plus Jakarta Sans;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 32px;
-    line-height: 150%;
+    font: 700 32px/150% 'Plus Jakarta Sans';
     letter-spacing: -3%;
     vertical-align: middle;
 }
@@ -364,11 +342,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 104px;
     height: 20px;
     opacity: 1;
-    font-family: Plus Jakarta Sans;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
+    font: 500 14px/100% 'Plus Jakarta Sans';
     letter-spacing: 2%;
     vertical-align: middle;
 }
@@ -377,16 +351,10 @@ input[type="range"]::-webkit-slider-thumb {
     width: 444px;
     height: 120px;
     opacity: 1;
-    top: 128px;
-    left: 24px;
 }
 .abc{
     margin: 0px;
-    font-family: Plus Jakarta Sans;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 19px;
-    line-height: 200%;
+    font:  400 19px/200% 'Plus Jakarta Sans';
     letter-spacing: -2%;
     color: #596780;
 }
@@ -395,8 +363,6 @@ input[type="range"]::-webkit-slider-thumb {
     width: 444px;
     height: 72px;
     opacity: 1;
-    top: 280px;
-    left: 24px;
     gap: 44px;
     display: flex;
 }
@@ -421,11 +387,7 @@ input[type="range"]::-webkit-slider-thumb {
     width: 92px;
     height: 28px;
     opacity: 1;
-    font-family: Plus Jakarta Sans;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 20px;
-    line-height: 150%;
+    font: 400 20px/150% 'Plus Jakarta Sans';
     letter-spacing: -2%;
     vertical-align: middle;
     color: #90A3BF;
@@ -450,9 +412,26 @@ input[type="range"]::-webkit-slider-thumb {
     width: 200px;
     height: 56px;
     opacity: 1;
-    top: 420px;
-    left: 24px;
     gap: 4px;
+}
+.detail-price-tren{
+    margin: 0px;
+    width: 200px;
+    height: 32px;
+    opacity: 1;
+    font: 700 28px/100% 'Plus Jakarta Sans'; 
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+.detail-price-duoi{
+    margin: 0px;
+    width: 200;
+    height: 20;
+    opacity: 1;
+    font: 700 16px/100% 'Plus Jakarta Sans';
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #90A3BF;
 }
 .Rent-Now{
     margin: 68px 0 0 104px;
@@ -467,15 +446,24 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 8px;
     background: #3563E9;
 }
+.detail-rent-now{
+    width: 76px;
+    height: 24px;
+    opacity: 1;
+    font: 700 16px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
 .detail-review{
     width: 1016px;
     height: 452px;
     opacity: 1;
-    top: 572px;
-    left: 392px;
     border-radius: 10px;
     background: #FFFFFF;
     padding: 24px;
+    box-sizing: border-box;
 }
 .detail-total-review{
     display: flex;
@@ -484,6 +472,15 @@ input[type="range"]::-webkit-slider-thumb {
     height: 28px;
     opacity: 1;
     gap: 12px;
+}
+.detail-total-review-text{
+    margin: 0px;
+    width: 80px;
+    height: 28px;
+    opacity: 1;
+    font: 600 20px/100% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    vertical-align: middle;
 }
 .detail-rv-13{
     display: flex;
@@ -526,8 +523,29 @@ input[type="range"]::-webkit-slider-thumb {
     opacity: 1;
     gap: 8px;
 }
+.detail-name-rv{
+    margin: 0px;
+    width: 128px;
+    height: 28px;
+    opacity: 1;
+    font: 700 20px/150% 'Plus Jakarta Sans';
+    letter-spacing: -3%;
+    vertical-align: middle;
+
+}
+.detail-rv-CEO{
+    margin: 0px;
+    width: 128px;
+    height: 20px;
+    opacity: 1;
+    font: 500 14px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #90A3BF;
+}
 .detail-date-reviewer{
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
     width: 128px;
     height: 56px;
@@ -535,11 +553,37 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 8px;
     margin-left: 640px;
 }
+.detail-date-rv{
+    margin: 0px;
+    width: 128px;
+    height: 28px;
+    opacity: 1;
+    font: 500 14px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    text-align: right;
+    vertical-align: middle;
+    color: #90A3BF;
+}
+.detail-rv-star{
+    width: 108px;
+    height: 20px;
+    opacity: 1;
+    gap: 2px;
+}
 .detail-describe-reviewer{
     margin: 0 24px 0 72px;
     width: 896px;
     height: 56px;
     opacity: 1;
+}
+.detail-describe-rv{
+    margin: 0px;
+    width: 896px;
+    height: 56px;
+    opacity: 1;
+    font: 400 14px/200% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    color: #596780;
 }
 .detail-showall{
     display: flex;
@@ -552,6 +596,20 @@ input[type="range"]::-webkit-slider-thumb {
     padding-right: 20px;
     padding-left: 20px;
     margin-left: 430px;
+}
+.detail-showall-button-text{
+    width: 68px;
+    height: 24px;
+    opacity: 1;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    text-align: center;
+    vertical-align: middle;
+    color: #90A3BF;
+}
+.detail-showall-button{
+    width: 16px;
+    height: 16px;
 }
 .detail-recent-layout{
     display: flex;
@@ -577,6 +635,16 @@ input[type="range"]::-webkit-slider-thumb {
     padding-right: 20px;
     padding-left: 20px;
 }
+.detail-recent-text{
+    margin: 0px;
+    width: 92px;
+    height: 24px;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    text-align: center;
+    vertical-align: middle;
+    color: #90A3BF;
+}
 .recent-viewall{
     width: 128px;
     height: 44px;
@@ -586,6 +654,16 @@ input[type="range"]::-webkit-slider-thumb {
     padding-right: 20px;
     padding-left: 20px;
 }
+.detail-recent-viewall{
+    margin: 0px;
+    width: 64px;
+    height: 24px;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    text-align: center;
+    vertical-align: middle;
+    color: #3563E9;
+}
 .detail-catalogue{
     display: flex;
     width: 1015px;
@@ -594,6 +672,8 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 32px;
 }
 .detail-catalog{
+    cursor: pointer;
+    transition: transform 0.3s ease;
     background: white;
     width: 317px;
     height: 388px;
@@ -601,6 +681,9 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 10px;
     padding: 24px;
     box-sizing: border-box;
+}
+.detail-catalog:hover{
+    transform: scale(1.05);
 }
 .detail-catalog-dautren{
     height: auto;
@@ -615,9 +698,28 @@ input[type="range"]::-webkit-slider-thumb {
     width: 128px;
     height: 48px;
     opacity: 1;
-    top: 24px;
-    left: 24px;
     gap: 4px;
+}
+.detail-catalog-namecar{
+    margin: 0px;
+    width: 128px;
+    height: 24px;
+    font: 700 20px/150% 'Plus Jakarta Sans';
+    letter-spacing: -3%;
+    vertical-align: middle;
+}
+.detail-catalog-kind{
+    margin: 0px;
+    width: 128px;
+    height: 20px;
+    font: 700 14px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #90A3BF;
+}
+.detail-catalog-car-img{
+    width: 272px;
+    height: 84px;
 }
 .detail-catalog-spesification{
     align-items: center;
@@ -637,6 +739,31 @@ input[type="range"]::-webkit-slider-thumb {
     opacity: 1;
     gap: 8px;
 }
+.detail-catalog-gas{
+    width: 24px;
+    height: 24px;
+}
+.detail-catalog-gas-text{
+    margin: 0px;
+    width: 28px;
+    height: 24px;
+    font: 500 14px/150% 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.detail-catalog-car-text{
+    margin: 0px;
+    width: 52px;
+    height: 24px;
+    font: 500 14px/150% 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.detail-catalog-profile-text{
+    margin: 0px;
+    width: 60px;
+    height: 24px;
+    font: 500 14px/150% 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
 .detail-catalog-duoi{
     height: auto;
     width: auto;
@@ -647,11 +774,35 @@ input[type="range"]::-webkit-slider-thumb {
 .detail-catalog-price{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 128px;
     opacity: 1;
     gap: 4px;
 }
+.detail-catalog-price-chinh{
+    margin: 0px;
+    width: 128px;
+    font: 700 20px/100% 'Plus Jakarta Sans';
+}
+.detail-catalog-duoi-gach{
+    text-decoration: line-through;
+    margin: 0px;
+    width: 128px;
+    height: 20px;
+    font: 700 14px/100% 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.detail-catalog-price-phu{
+    margin: 0px;
+    width: 128px;
+    height: 20px;
+    font: 700 14px/100% 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
 .detail-catalog-button{
+    text-decoration: none;
+    transition: transform 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -663,4 +814,151 @@ input[type="range"]::-webkit-slider-thumb {
     padding-right: 20px;
     padding-left: 20px;
     background: #3563E9;
+}
+.detail-catalog-button:hover{
+    transform: scale(1.2);
+}
+.detail-catalog-button-text{
+    margin: 0px;
+    width: 76px;
+    height: 24px;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    color: white;
+}
+.detail-recommendation-layout{
+    width: 1016px;
+    height: 448px;
+    opacity: 1;
+    gap: 16px;
+}
+.detail-recommendation{
+    display: flex;
+    width: 1016px;
+    height: 44px;
+    opacity: 1;
+    gap: 692px;
+    margin-bottom: 16px;
+}
+.detail-recommendation-car{
+    width: 196px;
+    height: 44px;
+    opacity: 1;
+    gap: 8px;
+    border-radius: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.detail-recommendation-text{
+    margin: 0px;
+    width: 156px;
+    height: 24px; 
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.detail-footer{
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 480px;
+    opacity: 1;
+    background: #FFFFFF;
+    padding: 60px;
+    box-sizing: border-box;
+}
+.detail-footer-tren{
+    height: auto;
+    width: auto;
+    display: flex;
+}
+.detail-footer-logo{
+    display: flex;
+    flex-direction: column;
+    width: 292px;
+    height: 108px;
+    opacity: 1;
+    gap: 16px;
+}
+.detail-footer-logo-text{
+    margin: 0px;
+    width: 148px;
+    height: 44px;
+    opacity: 1;
+    letter-spacing: -3%;
+    vertical-align: middle;
+    font: 700 32px/150% 'Plus Jakarta Sans';
+    color: #3563E9;
+}
+.detail-footer-logo-describe{
+    margin: 0px;
+    width: 292px;
+    height: 48px;
+    opacity: 1;
+    font: 500 16px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    color: #13131399;
+}
+.detail-about{
+    margin-left: 452px;
+    display: flex;
+    flex-direction: column;
+    width: 152px;
+    height: 244px;
+    opacity: 1;
+    gap: 24px;
+}
+.detail-about-text{
+    margin: 0px;
+    width: 152px;
+    height: 32px;
+    opacity: 1;
+    font: 600 20px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    vertical-align: middle;
+}
+.detail-about-describe-layout{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 152px;
+    height: 188px;
+    opacity: 1;
+}
+.detail-about-describe{
+    margin: 0px;
+    font: 500 16px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #13131399;
+}
+.detail-footer-line{
+    display: flex;
+    margin: 36px 0 36px 0;
+    width: 1320px;
+    height: 0px;
+    opacity: 1;
+    border-width: 1px;
+    border: 1px solid #13131329;
+}
+.detail-footer-duoi{
+    display: flex;
+    flex-direction: row;
+}
+.detail-footer-duoi-copyright{
+    margin: 0 680px 0 0;
+    width: 292px;
+    height: 24px;
+    opacity: 1;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    vertical-align: middle;
+}
+.detail-footer-duoi-privacy{
+    margin: 0 60px 0 0;
+    width: 144px;
+    height: 24px;
+    opacity: 1;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+    text-align: right;
+    vertical-align: middle;
 }

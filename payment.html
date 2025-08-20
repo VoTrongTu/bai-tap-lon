@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/payment.css">
+    <script src="js/index.js"></script> 
+    <title>RentSwift - Nền tảng cho thuê xe</title>
+</head>
+<body>
+    <div class="container-Payment"></div>
+        <nav class="Nav-Bar-Top">
+            <div class="logo">
+                <p>MORENT</p>
+            </div>
+        
+            <div class="Profil-and-Notification">
+                <img src="img/Like.png" alt="Like" class="like">
+                <img src="img/Notification.png" alt="Notification" class="Notification">
+                <img src="img/Settings.png" alt="settings" class="settings">
+                <img src="img/Profil.png" alt="Profil" class="Profil">
+            </div>
+        </nav>
+        <main class="content">
+            <section class="Payment-Infor">
+                <div class="Billing-Info">
+                    <h3 class="title">Billing Info</h4>
+                    <div class="Caption-Page">
+                        <p class="Caption">Please enter your billing info</p>
+                        <p class="Caption">Step 1 of 4</p>
+                    </div>
+                    <div class="container-Input-Info-Billing">   
+                        <div class="Input-Name">
+                            <h4 class="Name">Name</h5>
+                            <input type="text" class="input-info" placeholder="Your Name">
+                        </div>
+                        <div class="Input-Phone-Number">
+                            <h4 class="Phone-Number">Phone Number</h4>
+                            <input type="text" class="input-info"  placeholder="Phone-Number">
+                        </div>
+                        <div class="Input-Address">
+                            <h4 class="Address">Address</h4>
+                            <input type="text" class="input-info"  placeholder="Address">
+                        </div>
+                        <div class="Input-Town-City">
+                            <h4 class="Town-City">Town / City</h4>
+                            <input type="text" class="input-info"  placeholder="Town-City">
+                        </div>
+                    </div>     
+                </div>
+                <div class="Rental-Info">
+                    <h3 class="title">Rental Info</h4>
+                    <div class="Caption-Page">
+                        <p class="Caption">Please select your rental date</p>
+                        <p class="Caption">Step 2 of 4</p>
+                    </div>
+                    <div class="Pick-Up">
+                        <img src="img/Mark.png" alt="Mark" class="Mark">
+                        <h4 class="text-Pick-Up">Pick - Up</h4>
+                    </div>
+                    <div class="container-Input-Info-Rental">   
+                        <div class="Input-Location">
+                            <label class="Loca">Locations</label>
+                            <select id="city" name="City">
+                                <option value="">Select your city</option>
+                                <option value="hanoi">Hà Nội</option>
+                                <option value="hcm">TP. Hồ Chí Minh</option>
+                                <option value="danang">Đà Nẵng</option>
+                                <option value="cantho">Cần Thơ</option>
+                            </select>
+                        </div>
+                        <div class="Input-Date">
+                            <label class="date">Date</label>
+                            <select id="Date" name="Date">
+                                <option value="">Select your date</option>
+                                <option value="">1 day</option>
+                                <option value="">2 days</option>
+                                <option value="">3 days</option>
+                                <option value="">a week</option>
+                            </select>
+                        </div>
+                        <div class="Input-Time">
+                            <label class="time">Time</label>
+                            <select id="Time" name="Time">
+                                <option value="">Select your time</option>
+                                <option value="">3 hours</option>
+                                <option value="">6 hours</option>
+                                <option value="">12 hours</option>
+                                <option value="">24 hours</option>
+                            </select>
+                        </div>
+                    </div>
+                     <div class="Drop-Off">
+                        <img src="img/Mark.png" alt="Mark" class="Mark">
+                        <h4 class="text-Drop-Off">Drop-Off</h4>
+                    </div>    
+                    <div class="container-Input-Info-Rental">   
+                        <div class="Input-Location">
+                            <label class="Loca">Locations</label>
+                            <select id="city" name="city">
+                                <option value="">Select your city</option>
+                                <option value="hanoi">Hà Nội</option>
+                                <option value="hcm">TP. Hồ Chí Minh</option>
+                                <option value="danang">Đà Nẵng</option>
+                                <option value="cantho">Cần Thơ</option>
+                            </select>
+                        </div>
+                        <div class="Input-Date">
+                            <label class="date">Date</label>
+                            <select id="Date" name="Date">
+                                <option value="">Select your date</option>
+                                <option value="">1 day</option>
+                                <option value="">2 days</option>
+                                <option value="">3 days</option>
+                                <option value="">a week</option>
+                            </select>
+                        </div>
+                        <div class="Input-Time">
+                            <label class="time">Time</label>
+                            <select id="Time" name="Time">
+                                <option value="">Select your time</option>
+                                <option value="">3 hours</option>
+                                <option value="">6 hours</option>
+                                <option value="">12 hours</option>
+                                <option value="">24 hours</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="Payment-Method">
+                    <h3 class="title">Payment Method</h4>
+                    <div class="Caption-Page">
+                        <p class="Caption">Please enter your payment method</p>
+                        <p class="Caption">Step 3 of 4</p>
+                    </div>
+                    <div class="Credit-Car">
+                        <div class="Cre-Visa">
+                            <div class="Credit">
+                                <img src="img/Mark.png" alt="Mark" class="Mark">
+                                <h4 class="text-Credit-Car">Credit-Car</h4>
+                            </div>
+                            <img src="img/Visa.png" alt="Visa" class="visa">
+                        </div>
+                        <div class="container-Input-Info-Payment">   
+                            <div class="Input-Card Number">
+                                <h4 class="Card-Number">Card Number</h5>
+                                <input type="text" class="input-info-Payment" placeholder="Card Number">
+                            </div>
+                            <div class="Input-Expration Date">
+                                <h4 class="Expration-Date"> Expration Date</h4>
+                                <input type="text" class="input-info-Payment"  placeholder="DD / MM / YY">
+                            </div>
+                            <div class="Input-Card Holder">
+                                <h4 class="Card-Holder">Card Holder</h4>
+                                <input type="text" class="input-info-Payment"  placeholder="Card Holder">
+                            </div>
+                            <div class="Input-CVC">
+                                <h4 class="CVC">CVC</h4>
+                                <input type="text" class="input-info-Payment"  placeholder="CVC">
+                            </div>
+                        </div>     
+                       
+                    </div>    
+                    <label class="PayPal">
+                        <input type="checkbox" class="agree">
+                        <p>PayPal </p> 
+                        <img src="img/PayPal.png" alt="" class="img-PayPal">
+                    </label>
+                    <label class="Bitcoin">
+                        <input type="checkbox" class="agree">
+                        <p>Bitcoin </p> 
+                        <img src="img/Bitcoin.png" alt="" class="img-Bitcoin">
+                    </label>
+                </div>
+                <div class="Confirmation-Rental">
+                    <h3 class="title">Payment Method</h4>
+                    <div class="Caption-Page">
+                        <p class="Caption">Please enter your payment method</p>
+                        <p class="Caption">Step 4 of 4</p>
+                    </div>
+                    <div class="Confirmation">
+                        <label class="spam-agree">
+                            <input type="checkbox" class="agree">
+                            <p>I agree with sending an Marketing and newsletter emails. No spam, promissed!</p>
+                        </label>
+                         <label class="spam-agree">
+                            <input type="checkbox" class="agree">
+                            <p>I agree with our terms and conditions and privacy policy.</p>
+                        </label>
+                    </div>
+                    <button class="Rent-Now">Rent Now</button>
+                    <div class="Safe-Data">
+                        <img src="img/ic-security-safety.png" alt="Security" class="img-Security">
+                        <h4 class="All-Safe">All your data are safe</h4>
+                        <p class="content-safe-data">We are using the most advanced security to provide you the best experience ever.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- ---------------------------------------------------------- -->
+            <section class="Rental-Summary">
+                <h3 class="title">Rental Summary</h4>
+                <div class="Caption-Page">
+                    <p class="Caption">Prices may change depending on the length of the rental and the price of your rental car.</p>
+                </div>
+                <div class="look-and-carname">
+                    <img src="img/Look.png" alt="Look" class="Look">
+                    <div class="Car-Name-Review">
+                        <h2 class="Name-Car">Nissan GT - R</h2>
+                    <div class="Review">
+                        <img src="img/Review Star.png" alt="Review star" class="star">
+                        <p>440+ Reviewer</p>
+                    </div>
+                      </div>
+                </div>
+                
+                <hr class="line-summary">
+
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <p class="price">$80.00</p>
+                </div>
+                <div class="Tax">
+                    <p>Tax</p>
+                    <p class="price">$0</p>
+                </div>
+                <button class="Apply-Now">
+                    <p class="caption-apply">Apply promo code</p>
+                    <p class="apply">Apply now</p>
+                </button>
+                <div class="Total-Price">
+                    <div>
+                        <h3>Total Rental Price</h3>
+                        <p class="caption-total-price">Overall price and includes rental discount</p>
+                    </div>
+                    <p class="total">$80.00</p>
+                </div>
+            </section>
+        </main>
+        <footer class="Footer">
+            <div class="Footer-top-content">
+                <div class="Container-Footer-logo">
+                    <p class="Logo-Text">MORENT</p>
+                    <p class="Content-Logo">Our vision is to provide convenience and help increase your sales business.</p>
+                </div>
+                <div class="Container-About">
+                    <p class="About">About</p>
+                    <div class="Content-About">How it works Featured Partnership Bussiness Relation</div>
+                </div>
+                <div class="Container-Community">
+                    <p class="Community">Community</p>
+                    <div class="Content-Community">Events <br> Blog <br> Podcast <br> Invite a friend</div>
+                </div>
+                <div class="Container-Socials">
+                    <p class="Socials">Socials</p>
+                    <div class="Content-Socials">Discord <br> Instagram <br> Twitter <br> Facebook</div>
+                </div>
+            </div>
+            <hr class="line-Footer">
+            <div class="Footer-bottom-content">
+                <div class="Copyright">©2022 MORENT. All rights reserved</div>
+                <div class="Legal-links">
+                    <p>Privacy & Policy</p>
+                    <p>Terms & Condition</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

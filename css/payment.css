@@ -1,0 +1,439 @@
+.container-Pyment
+{
+    width :1440px;
+    height: 2844px;
+
+}
+.Nav-Bar-Top{
+    width: 1440px;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo bên trái, search giữa, profile bên phải */
+    padding-left: 60px;
+    padding-right: 32px;
+}
+.search{
+    width:492px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 70px;
+    
+}
+
+.logo{
+    font: normal 700 32px 'Plus Jakarta Sans';
+    color: #3563E9;
+    line-height: 150%;
+    margin-right: 64px;
+}
+
+.search-img{
+    width :24px;
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.search-something{
+    height: 20px;
+    font: normal 500 14px 'Plus Jakarta Sans';      
+    line-height: 150%;
+    margin-right: 235px;
+}
+.search-filter{
+    width: 24px;
+    height: 24px;
+    
+}
+.Profil-and-Notification{
+    position: relative;
+    right: 50px;
+    margin-left: 408px;
+    width: 236px;
+    height: 44px;
+    display: flex;
+    gap: 20px;
+}
+.like,.Notification,.settings,.Profil{
+    width: 44px;
+    height: 44px;
+}
+.content{
+    width :1440px;
+    height: 2240px;
+    background-color: #F6F7F9;
+    display: flex;
+    gap: 32px;
+}
+.Payment-Infor{
+    width :852px;
+    height: 2176px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+    margin-left: 32px;
+    
+}
+.Rental-Info,
+.Billing-Info,
+.Payment-Method,
+.Confirmation-Rental{
+    width :852px;
+    background-color: #FFFFFF;
+}
+.Billing-Info{
+    height: 336px;
+    border-radius: 10px;
+}
+.container-Input-Info-Billing,
+.container-Input-Info-Rental,
+.container-Input-Info-Payment{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 24px;
+    
+}
+.title{
+    margin-left: 24px;
+    font: normal 700 20px 'Plus Jakarta Sans';
+    color: #1A202C;
+    margin-bottom: 0;
+}
+.Caption-Page{
+    display: flex;
+   justify-content: space-between;
+   gap: 0;
+   margin-bottom: -12px;
+   margin-right: 24px;
+}
+.Caption{
+    margin-left: 24px;
+    font: normal 500 14px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.Name,
+.Phone-Number,
+.Address,
+.Town-City{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.input-info{
+    width :346px;
+    height: 56px;
+    padding-left: 32px;
+    border :0;
+    border-radius: 10px;
+    background-color: #F6F7F9;
+}
+/* ------------------------------------------- */
+.Rental-Info{
+    height: 664px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Pick-Up,.Drop-Off,.Credit{
+    display: flex;
+    gap: 8px;
+    margin-left: 24px;
+    align-items: center;
+}
+.text-Pick-Up,
+.text-Drop-Off,
+.text-Credit-Car{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.Mark{
+    width :16px;
+    height: 16px;
+    background-color: #3563E94D;
+    border-radius: 70px;
+}
+.Input-Location,
+.Input-Date,
+.Input-Time{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+#city,#Date,#Time{
+    width: 386px;
+    height: 56px;
+    border :0;
+    background-color: #F6F7F9;
+    padding-left: 24px;
+    font: normal 500 14px 'Plus Jakarta Sans';
+    color: #90A3BF;
+    border-radius: 10px;
+}
+.Loca,.date,.time{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.Payment-Method{
+    height: 596px;
+    border-radius: 10px;
+}
+.Cre-Visa{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
+    align-items: center;
+}
+.visa{
+    width :92px;
+    height: 20px;
+}
+.Credit-Car{
+    width: 760px;
+    height: 308px;
+    background-color: #F6F7F9;
+    padding: 24px;
+    margin-left: 24px;
+    margin-top: 12px;
+    margin-right: 24px;
+    border-radius: 10px;
+}
+.Card-Number,
+.Expration-Date,
+.Card-Holder,
+.CVC{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.input-info-Payment{
+    width :312px;
+    height: 56px;
+    padding-left: 32px;
+    border :0;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+.PayPal,
+.Bitcoin{
+    width :780px;
+    height: 56px;
+    background-color: #F6F7F9;
+    margin-left: 24px;
+    margin-top: 12px;
+    font: normal 600 16px 'Plus Jakarta Sans';
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.agree{
+    width :16px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.img-PayPal,
+.img-Bitcoin{
+    position: relative;
+    margin-left: 544px;
+    width: 100px;
+    height: 24px;
+}
+/* ===================================================== */
+.Confirmation-Rental{
+    height: 484px;
+    border-radius: 10px;
+   
+}
+.Confirmation{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    gap: 24px;
+    margin-top: 32px;
+}
+.spam-agree{
+    display: flex;
+    width :780px;
+    height: 56px;
+    background-color:#F6F7F9 ;
+    padding-left: 32px;
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #1F2544;
+    
+}
+.Rent-Now{
+    width :140px;
+    height: 56px;
+    background-color: #3563E9;
+    border:0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+    margin-top: 32px;
+    cursor: pointer;
+}
+.Rent-Now:hover{
+    background-color:#1c42b4;
+}
+.Safe-Data{
+    display: block;
+    gap: 8px;
+    margin-left: 32px;
+    margin-top: 32px;
+}
+.img-Security{
+    margin-bottom: -14px;
+}
+.content-safe-data{
+    font: normal 500 14px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+/* --------------------Footer---------------- */
+.Footer-top-content{
+    display: flex;
+    gap: 60px;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.Container-Footer-logo{
+    width: 292px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 392px;
+}
+.Logo-Text{
+    font: normal 700 32px 'Plus Jakarta Sans';
+    color: #3563E9;
+    margin-bottom: 0;
+}
+.Content-Logo{
+    width :292px;
+    height: 48px;
+    font: normal 500 16px 'Plus Jakarta Sans';
+    counter-reset: #13131399;
+}
+.Container-About,
+.Container-Community,
+.Container-Socials{
+    width :152px;
+    height: 244px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 24px ;
+}
+.About,
+.Community,
+.Socials{
+    font: normal 600 20px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.Content-About,
+.Content-Community,
+.Content-Socials{
+    height: 188px;
+    font: normal 500 16px 'Plus Jakarta Sans';
+    color: #13131399;
+   line-height: 40px;
+}
+.Footer-bottom-content{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+    display: flex;
+    align-items: center;
+    gap: 725px;
+    margin-left: 60px;
+    margin-top: 36px;
+}
+.Legal-links{
+    display: flex;
+    gap: 60px;
+}
+.line-Footer{
+    width :1320px;
+}
+/* ---------------------------Rental Summary-------------------------- */
+.Rental-Summary{
+    width: 492px;
+    height: 560px;
+    background-color: #FFFFFF;
+    margin-top: 32px;
+}
+.look-and-carname{
+    display: flex;
+    position: relative;
+    gap: 16px;
+    margin-left: 24px;
+    margin-top: 32px;
+}
+.Look{
+    width: 132px;
+    height: 108px;
+}
+.Car-Name-Review{
+    display: flex;
+    flex-direction: column;
+}
+.star{
+    width: 108px;
+    height: 20px;
+}
+.Review{
+    display: flex;
+    gap: 8px;
+    font: normal 500 14px 'Plus Jakarta Sans';
+    color: #90A3BF;
+    align-items: center;
+    margin-top: -12px;
+}
+.line-summary{
+    width: 80%;
+    
+    margin: 0 auto;
+}
+.subtotal,.Tax,
+.caption-apply{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.caption-apply{font-size: 14px;}
+.price,.apply{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.Apply-Now{
+    width: 444px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    align-items: center;
+    margin-left: 24px;
+    padding-right: 32px;
+    cursor: pointer;
+}
+.Total-Price{
+    display: flex;
+    margin-left: 24px;
+   justify-content: space-between;
+   margin-right: 24px;
+   align-items: center;
+}
+.caption-total-price{
+    font: normal 500 14px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.total{
+    font: normal 700 32px 'Plus Jakarta Sans';
+    color: #1A202C;
+}

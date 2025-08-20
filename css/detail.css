@@ -1,0 +1,666 @@
+/* ------------------------detail-cars--------------------*/
+.detail-layout {
+    width: 100%;
+    min-height: 100vh;
+    background: #F6F7F9;
+}
+/*------------------------TOP BAR----------------------*/
+.detail-bar-top{
+    position: sticky;
+    top: 0;         
+    z-index: 1000;        
+    height: 124px;
+    border-width: 1px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; 
+}
+.detail-bar-top-logo{
+    font: normal 700 32px 'Plus Jakarta Sans';
+    color: #3563E9;
+    line-height: 150%;
+    margin-right: 60px;
+    margin-left: 40px;
+}
+.detail-searchbox{
+    width:  492px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    justify-content: space-between;
+    border: 1px solid #C3D4E966;
+    border-radius: 70px;
+    margin-right: 480px;
+}
+.detail-searchbox input{
+    border: none;   /* bỏ khung viền mặc định */
+    outline: none;  /* bỏ viền xanh khi focus */
+    font: normal 500 14px 'Plus Jakarta Sans', sans-serif;
+    color: #000;    /* màu chữ khi gõ */
+    background: transparent; /* trong suốt để ăn theo khung cha */
+    flex: 1;
+    margin: 0 10px;
+}
+.detail-searchbox-img {
+    width: 24px;
+    height: 24px;
+}
+.detail-searchbox-filter{
+    width: 24px;
+    height: 24px;
+}
+.detail-profil{
+    width: 236px;
+    height: 44px;
+    opacity: 1;
+    display: flex;
+    gap: 20px;
+}
+.detail-content{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.detail-bar-side{
+    width: 360px;
+    height: 2016px;
+    opacity: 1;
+    border-right-width: 1px;
+    background: #FFFFFF;
+}
+.detail-TYPE {
+    padding-top: 32px;
+    padding-left: 32px;
+    width: 176px;
+    height: 352px;
+    top: 32px;
+    left: 32px;
+    opacity: 1;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
+}
+.detail-font-sidebar {
+    width: 104px;
+    height: 20px;
+    opacity: 1;
+    font: normal 600 12px 'Plus Jakarta Sans', sans-serif; 
+    color: #90A3BF;
+    margin: 0px;
+}
+.detail-TYPE-layout{
+    width: 176px;
+    height: 304px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.sidebar-element{
+    cursor: pointer;
+    width: 176px;
+    height: 24px;
+    opacity: 1;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.sidebar-tick-element {
+  width: 19.99px;
+  height: 20px;
+  background: url("../img/tick-trang.png") no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-tick-element.active {
+  background: url("../img/tick-xanh.png") no-repeat center center;
+  background-size: contain;
+}
+.sidebar-car-layout{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.sidebar-car-element{
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    text-align: justify;
+    vertical-align: middle;
+}
+.detail-CAPACITY{
+    padding-top: 60px;
+    padding-left: 32px;
+    width: 176px;
+    height: 240px;
+    opacity: 1;
+    top: 440px;
+    left: 32px;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
+}
+.detail-PRICE{
+    padding-top: 60px;
+    padding-left: 32px;
+    width: 296px;
+    height: 104px;
+    opacity: 1;
+    top: 736px;
+    left: 32px;
+    gap: 28px;
+    display: flex;
+    flex-direction: column;
+}
+.detail-pricerange-layout{
+    width: 296px;
+    height: 56px;
+    opacity: 1;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.detail-range-wrapper{
+    width: 296px;
+    height: 20px;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="range"] {
+  background: linear-gradient(to right, #3563E9 50%, #90A3BF 50%);
+  border-radius: 12px;
+  appearance: none;
+  width: 100%;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: url('../img/detail-tron.png') no-repeat center center;
+  background-size: cover;
+  border: none;
+  margin-top: -8px;
+  cursor: pointer;
+}
+.detail-pricerange-text{
+    width: 296px;
+    height: 24px;
+    opacity: 1;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    text-align: justify;
+    vertical-align: middle;
+    color: #596780;
+}
+.detail-main-content{
+    width: auto;
+    height: auto;
+    margin-top: 32px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.detail-content-info{
+    display: flex;
+    flex-direction: row;
+}
+.detail-car-img{
+    display: flex;
+    flex-direction: column;
+}
+.car-img-main{
+    width: 492px;
+    height: 360px;
+    background: #3563E9;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.car-img-main-text{
+    margin-top: 24px;
+    margin-left: 24px;
+}
+.detail-text-main{
+    margin: 0px;
+    color: #FFFFFF;
+    width: 372px;
+    height: 96px;
+    opacity: 1;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: -3%;
+    vertical-align: middle;
+}
+.detail-text-modifier{
+    margin-top: 24px;
+    margin-bottom: 0px;
+    width: 284px;
+    height: 48px;
+    opacity: 1;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+.anh-main{
+    width: 492px;
+    height: 360px;
+    opacity: 1;
+}
+.car-img-modifier{
+    padding-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+.thumb{
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 148px;
+    height: 124px;
+    opacity: 1;
+    top: 416px;
+    left: 392px;
+}
+.thumb:hover {
+    transform: scale(1.05);
+}
+.active-thumb {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+}
+.car-img-modifier .thumb{
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.car-img-modifier .thumb:hover {
+    transform: scale(1.1);
+    z-index: 1;            
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.detail-car-info{
+    flex: 1;             /* chiếm phần còn lại */
+    width: 100%;
+    height: auto;
+    margin-left: 32px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px;
+}
+.nissan-phandau{
+    display: flex;
+    align-items: center;
+}
+.detail-heart{
+    margin: 27.1px 0 0 202px;
+    width: 20px;
+    height: 17.799999237060547px;
+    opacity: 1;
+    top: 3.1px;
+    left: 2px;
+}
+.car-name{
+    gap: 8px;
+    padding: 24px 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 72px;
+}
+.Nissan{
+    margin: 0px;
+    width: 220px;
+    height: 40px;
+    opacity: 1;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: -3%;
+    vertical-align: middle;
+}
+.rv-nissan{
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 220px;
+    height: 24px;
+    opacity: 1;
+    gap: 8px;
+}
+.rv-star{
+    width: 108px;
+    height: 20px;
+    opacity: 1;
+    gap: 2px;
+}
+.rv-440{
+    margin: 0px;
+    color: #596780;
+    width: 104px;
+    height: 20px;
+    opacity: 1;
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    vertical-align: middle;
+}
+.Nissan-rv{
+    margin: 32px 0 0 24px;
+    width: 444px;
+    height: 120px;
+    opacity: 1;
+    top: 128px;
+    left: 24px;
+}
+.abc{
+    margin: 0px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 19px;
+    line-height: 200%;
+    letter-spacing: -2%;
+    color: #596780;
+}
+.Nissan-Spesification{
+    padding: 32px 0 0 24px;
+    width: 444px;
+    height: 72px;
+    opacity: 1;
+    top: 280px;
+    left: 24px;
+    gap: 44px;
+    display: flex;
+}
+.Spesification{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 72px;
+    opacity: 1;
+    gap: 16px;
+}
+.Spesification-tren{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 28px;
+    opacity: 1;
+    gap: 16px;
+}
+.Spesification-text{
+    margin: 0px;
+    width: 92px;
+    height: 28px;
+    opacity: 1;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -2%;
+    vertical-align: middle;
+    color: #90A3BF;
+}
+.Spesification-duoi{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 28px;
+    opacity: 1;
+    gap: 16px;
+}
+.detail-phancuoi{
+    display: flex;
+    align-items: center;
+}
+.detail-price{
+    gap: 4px;
+    padding: 68px 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 56px;
+    opacity: 1;
+    top: 420px;
+    left: 24px;
+    gap: 4px;
+}
+.Rent-Now{
+    margin: 68px 0 0 104px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 56px;
+    opacity: 1;
+    border-radius: 4px;
+    gap: 8px;
+    background: #3563E9;
+}
+.detail-review{
+    width: 1016px;
+    height: 452px;
+    opacity: 1;
+    top: 572px;
+    left: 392px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 24px;
+}
+.detail-total-review{
+    display: flex;
+    align-items: center;
+    width: 136px;
+    height: 28px;
+    opacity: 1;
+    gap: 12px;
+}
+.detail-rv-13{
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 28px;
+    opacity: 1;
+    border-radius: 4px;
+    gap: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #3563E9;
+}
+.detail-review-layout{
+    width: 968px;
+    height: 124px;
+    opacity: 1;
+    margin-bottom: 24px;
+    margin-top: 32px;
+}
+.detail-reviewer{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+.detail-profil-reviewer{
+    width: 56px;
+    height: 56px;
+    opacity: 1;
+    border-radius: 60px;
+}
+.detail-name-reviewer{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 128px;
+    height: 56px;
+    opacity: 1;
+    gap: 8px;
+}
+.detail-date-reviewer{
+    display: flex;
+    flex-direction: column;
+    width: 128px;
+    height: 56px;
+    opacity: 1;
+    gap: 8px;
+    margin-left: 640px;
+}
+.detail-describe-reviewer{
+    margin: 0 24px 0 72px;
+    width: 896px;
+    height: 56px;
+    opacity: 1;
+}
+.detail-showall{
+    display: flex;
+    align-items: center;
+    width: 132px;
+    height: 44px;
+    opacity: 1;
+    border-radius: 4px;
+    gap: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 430px;
+}
+.detail-recent-layout{
+    display: flex;
+    flex-direction: column;
+    width: 1016px;
+    height: 448px;
+    opacity: 1;
+    gap: 16px;
+}
+.detail-recent{
+    display: flex;
+    width: 1016px;
+    height: 44px;
+    opacity: 1;
+    gap: 756px;
+}
+.recent-car-text{
+    width: 132px;
+    height: 44px;
+    opacity: 1;
+    border-radius: 4px;
+    gap: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.recent-viewall{
+    width: 128px;
+    height: 44px;
+    opacity: 1;
+    border-radius: 4px;
+    gap: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.detail-catalogue{
+    display: flex;
+    width: 1015px;
+    height: 388px;
+    opacity: 1;
+    gap: 32px;
+}
+.detail-catalog{
+    background: white;
+    width: 317px;
+    height: 388px;
+    opacity: 1;
+    border-radius: 10px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+.detail-catalog-dautren{
+    height: auto;
+    width: auto;
+    display: flex;
+    gap: 117px;
+    margin-bottom: 52px;
+}
+.detail-catalog-name{
+    display: flex;
+    flex-direction: column;
+    width: 128px;
+    height: 48px;
+    opacity: 1;
+    top: 24px;
+    left: 24px;
+    gap: 4px;
+}
+.detail-catalog-spesification{
+    align-items: center;
+    display: flex;
+    width: 269px;
+    height: 24px;
+    opacity: 1;
+    gap: 17px;
+    margin-top: 52px;
+    margin-bottom: 36px;
+}
+.detail-gas{
+    align-items: center;
+    display: flex;
+    width: 60px;
+    height: 24px;
+    opacity: 1;
+    gap: 8px;
+}
+.detail-catalog-duoi{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.detail-catalog-price{
+    display: flex;
+    flex-direction: column;
+    width: 128px;
+    opacity: 1;
+    gap: 4px;
+}
+.detail-catalog-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 44px;
+    opacity: 1;
+    border-radius: 4px;
+    gap: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #3563E9;
+}

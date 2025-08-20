@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/detail.css">
+    <title>Detail Car Rent</title>
+</head>
+<body>
+    <div class="detail-layout">
+        <!-------------nav bar top------------->
+        <nav class="detail-bar-top">
+            <div class="detail-bar-top-logo">MORENT</div>
+            <div class="detail-searchbox">
+                <img src="img/search-normal.png" alt="search" class="detail-searchbox-img">
+                <input type="text" placeholder="Search something here">
+                <a href="nhap.html">
+                    <img src="img/filter.png" alt="filter-search" class="detail-searchbox-filter">
+                </a>
+            </div>
+            <div class="detail-profil">
+                <img src="img/Like.png" alt="Like" class="like">
+                <img src="img/Notification.png" alt="Notification" class="Notification">
+                <img src="img/Settings.png" alt="settings" class="settings">
+                <img src="img/Profil.png" alt="Profil" class="Profil">
+            </div>
+        </nav>
+        <!-------------content------------------->
+        <main class="detail-content">
+            <section class="detail-bar-side">
+                <div class="detail-TYPE">
+                    <p class="detail-font-sidebar">T Y P E</p>
+                    <div class="detail-TYPE-layout">
+                        <div class="sidebar-element">
+                            <div class="sidebar-tick-element"></div>
+                            <div class="sidebar-car-layout" style="width: 144px;height: 24px;">
+                                <div class="sidebar-car-element">Sport <span style="color: lightgray;">(10)</span></div>
+                            </div>                            
+                        </div>   
+                        <div class="sidebar-element">
+                            <div class="sidebar-tick-element"></div>
+                            <div class="sidebar-car-layout" style="width: 80px;height: 24px;">
+                                <div class="sidebar-car-element">SUV <span style="color: lightgray;">(12)</span></div>
+                            </div>                            
+                        </div>
+                        <div class="sidebar-element">
+                            <div class="sidebar-tick-element"></div>
+                            <div class="sidebar-car-layout" style="width: 88px;height: 24px;">
+                                <div class="sidebar-car-element">MPV <span style="color: lightgray;">(16)</span></div>
+                            </div>                            
+                        </div>
+                        <div class="sidebar-element">
+                            <div class="sidebar-tick-element"></div>
+                            <div class="sidebar-car-layout" style="width: 112px;height: 24px;">
+                                <div class="sidebar-car-element">Sedan <span style="color: lightgray;">(20)</span></div>
+                            </div>                            
+                        </div>
+                        <div class="sidebar-element">
+                            <div class="sidebar-tick-element"></div>
+                            <div class="sidebar-car-layout" style="width: 112px;height: 24px;">
+                                <div class="sidebar-car-element">Coupe <span style="color: lightgray;">(14)</span></div>
+                            </div>                            
+                        </div>
+                        <div class="sidebar-element">
+                            <div class="sidebar-tick-element"></div>
+                            <div class="sidebar-car-layout" style="height: 24px;">
+                                <div class="sidebar-car-element">Hatchback <span style="color: lightgray;">(14)</span></div>
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="detail-CAPACITY">
+                    <p class="detail-font-sidebar">C A P A C I T Y</p>
+                    <div class="detail-TYPE-layout">
+                        <div class="sidebar-element">
+                            <div class="sidebar-tick-element"></div>
+                            <div class="sidebar-car-layout" style="width: 144px;height: 24px;">
+                                <div class="sidebar-car-element">2 Person <span style="color: lightgray;">(10)</span></div>
+                            </div>                            
+                        </div>   
+                        <div class="sidebar-element">
+                            <div class="sidebar-tick-element"></div>
+                            <div class="sidebar-car-layout" style="width: 127px;height: 24px;">
+                                <div class="sidebar-car-element">4 Person <span style="color: lightgray;">(14)</span></div>
+                            </div>                            
+                        </div>
+                        <div class="sidebar-element">
+                            <div class="sidebar-tick-element"></div>
+                            <div class="sidebar-car-layout" style="width: 120px;height: 24px;">
+                                <div class="sidebar-car-element">6 Person <span style="color: lightgray;">(12)</span></div>
+                            </div>                            
+                        </div>
+                        <div class="sidebar-element">
+                            <div class="sidebar-tick-element"></div>
+                            <div class="sidebar-car-layout" style="width: 144px;height: 24px;">
+                                <div class="sidebar-car-element">8 or More  <span style="color: lightgray;">(16)</span></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-PRICE">
+                    <p class="detail-font-sidebar">P R I C E</p>
+                    <div class="detail-pricerange-layout">
+                        <div class="detail-range-wrapper">
+                            <input type="range" id="detail-range" min="0" max="100" value="50">
+                        </div>
+                        <div class="detail-pricerange-text">Max. $100.00</div>
+                    </div>
+                </div>
+            </section>
+            <section class="detail-main-content">
+                <div class="detail-content-info">
+                    <!--ảnh detail-->
+                    <div class="detail-car-img">
+                        <!--ảnh chính-->
+                     
+                            <img src="img/View.png" class="anh-main" id="mainCarImg" alt="Ảnh chính">
+                      
+                        <!--ảnh phụ-->
+                        <div class="car-img-modifier">
+                            <img src="img/view-1.png" class="thumb" alt="car1" loading="lazy">
+                            <img src="img/view-2.png" class="thumb" alt="car2" loading="lazy">
+                            <img src="img/view-3.png" class="thumb" alt="car3" loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="detail-car-info">
+                        <div class="nissan-phandau">
+                            <div class="car-name">
+                                <p class="Nissan">Nissan GT-R</p>
+                                <div class="rv-nissan">
+                                    <img src="img/rv-star.png" class="rv-star" alt="review star">
+                                    <p class="rv-440">440+ Reviewer</p>
+                                </div>
+                            </div>
+                            <img src="img/heart-red.png" class="detail-heart">
+                        </div>
+                        <div class="Nissan-rv">
+                            <p class="abc">
+                                NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
+                            </p>
+                        </div>
+                        <div class="Nissan-Spesification">
+                            <div class="Spesification">
+                                <div class="Spesification-tren">
+                                    <p class="Spesification-text">Type Car</p>
+                                    <p class="Spesification-text" style="color: #596780; font-weight: 600;">Sport</p>
+                                </div>
+                                <div class="Spesification-duoi">
+                                    <p class="Spesification-text">Steering</p>
+                                    <p class="Spesification-text" style="color: #596780; font-weight: 600;">Manual</p>
+                                </div>
+                            </div>
+                            <div class="Spesification">
+                                <div class="Spesification-tren">
+                                    <p class="Spesification-text">Capacity</p>
+                                    <p class="Spesification-text" style="color: #596780; font-weight: 600;">2 Person</p>
+                                </div>
+                                <div class="Spesification-duoi">
+                                    <p class="Spesification-text">Gasoline</p>
+                                    <p class="Spesification-text" style="color: #596780; font-weight: 600;">70L</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-phancuoi">
+                            <div class="detail-price">
+                                <p style="width: 200px; height: 32px;font: 700 28px/100% 'Plus Jakarta Sans', sans-serif; margin: 0px;">$80.00/ <span style="font: 700 16px/100% 'Plus Jakarta Sans', sans-serif; color: #90A3BF;">days</span></p>
+                                <p style="font: 700 16px/100% 'Plus Jakarta Sans', sans-serif;margin: 0px;color: #90A3BF;">$100.00</p>
+                            </div>
+                            <a href="#" class="Rent-Now">
+                                <p style="width: 76px;height: 24px;font: 700 16px/150% 'Plus Jakarta Sans';color: white; margin: 0px;">Rent Now</p>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="detail-review">
+                    <div class="detail-total-review">
+                        <p style="font: 600 20px 'Plus Jakarta Sans'; width: 80px;height:28px;">Reviews</p>
+                        <div class="detail-rv-13">
+                            <p style="font: 700 14px 'Plus Jakarta Sans';width: 20px;height: 16px;color: white;">13</p>
+                        </div>
+                    </div>
+                    <div class="detail-review-layout">
+                        <div class="detail-reviewer">
+                            <img src="img/Profil.png" class="detail-profil-reviewer">
+                            <div class="detail-name-reviewer">
+                                <p style="font: 700 20px/150% 'Plus Jakarta Sans';width: 128px;height: 28px;margin: 0px;">Alex Stanton</p>
+                                <p style="font: 500 14px/150% 'Plus Jakarta Sans';width: 128px;height: 20px;margin: 0px;color: #90A3BF;">CEO at Bukalapak</p>
+                            </div>
+                            <div class="detail-date-reviewer">
+                                <p style="font: 500 14px/150% 'Plus Jakarta Sans';width: 128px;height: 28px;color: #90A3BF;margin: 0px;">21 July 2022</p>
+                                <img src="img/rv-star.png" style="width: 108px;height: 20px;">
+                            </div>
+                        </div>
+                        <div class="detail-describe-reviewer">
+                            <p style="font: 400 14px/2 'Plus Jakarta Sans', sans-serif; color: #596780;margin: 0px;";">
+                                We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="detail-review-layout">
+                        <div class="detail-reviewer">
+                            <img src="img/detail-prfil-nu.png" class="detail-profil-reviewer">
+                            <div class="detail-name-reviewer">
+                                <p style="font: 700 20px/150% 'Plus Jakarta Sans';width: 128px;height: 28px;margin: 0px;">Alex Stanton</p>
+                                <p style="font: 500 14px/150% 'Plus Jakarta Sans';width: 128px;height: 20px;margin: 0px;color: #90A3BF;">CEO at Bukalapak</p>
+                            </div>
+                            <div class="detail-date-reviewer">
+                                <p style="font: 500 14px/150% 'Plus Jakarta Sans';width: 128px;height: 28px;color: #90A3BF;margin: 0px;">20 July 2022</p>
+                                <img src="img/rv-star.png" style="width: 108px;height: 20px;">
+                            </div>
+                        </div>
+                        <div class="detail-describe-reviewer">
+                            <p style="font: 400 14px/2 'Plus Jakarta Sans', sans-serif; color: #596780;margin: 0px;";">
+                                We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="detail-showall">
+                        <p style="font: 600 16px 'Plus Jakarta Sans';color: #90A3BF;margin: 0px;">Show All</p>
+                        <img src="img/detail-arrowdown.png" style="width: 16px;height: 16px;">
+                    </div>
+                </div>
+
+                <div class="detail-recent-layout">
+                    <div class="detail-recent">
+                        <div class="recent-car-text">
+                            <p style="font: 600 16px/150% 'Plus Jakarta Sans';width: 92px;height: 24px;color: #90A3BF;">Recent car</p>
+                        </div>
+                        <div class="recent-viewall">
+                            <p style="font: 600 16px/150% 'Plus Jakarta Sans';width: 64px;height: 24px;color: #3563E9;">View All</p>
+                        </div>
+                    </div>
+                    <div class="detail-catalogue">
+                        <!------------------------car1-------------------------->
+                        <div class="detail-catalog">
+                            <div class="detail-catalog-dautren">
+                                <div class="detail-catalog-name">
+                                    <p style="font: 700 20px/150% 'Plus Jakarta Sans';width: 128px;height: 24px;margin: 0px;">Koenigsegg</p>
+                                    <p style="font: 700 14px/150% 'Plus Jakarta Sans';width: 128px;height: 20px;color: #90A3BF;margin: 0px;">Sport</p>
+                                </div>
+                                <img src="img/heart-red.png" style="width: 24px;height: 24px;">
+                            </div>
+                            <img src="img/image 7.png" style="width: 272px;height: 84px;">
+                            <div class="detail-catalog-spesification">
+                                <div class="detail-gas">
+                                    <img src="img/gas-station.png" style="width: 24px;height: 24px;">
+                                    <p style="font: 500 14px/24px 'Plus Jakarta Sans';margin: 0px; width: 28px;height: 24px;color: #90A3BF;">90L</p> 
+                                </div>
+                                <div class="detail-gas" style="width: 84px;">
+                                    <img src="img/Car.png" style="width: 24px;height: 24px;">
+                                    <p style="font: 500 14px/24px 'Plus Jakarta Sans';margin: 0px; width: 52px;height: 24px;color: #90A3BF;">Manual</p>
+                                </div>    
+                                <div class="detail-gas" style="width: 91px;">
+                                    <img src="img/profile-2user.png" style="width: 24px;height: 24px;">
+                                    <p style="font: 500 14px/24px 'Plus Jakarta Sans';margin: 0px; width: 60px;height: 24px;color: #90A3BF;">2 People</p>
+                                </div>     
+                            </div>
+                            <div class="detail-catalog-duoi">
+                                <div class="detail-catalog-price">
+                                    <p style="font: 700 20px 'Plus Jakarta Sans';width: 128px;height: 24px;margin: 0px;">$99.00/ <span style="font: 700 14px 'Plus Jakarta Sans';color: #90A3BF;">day</span></p>
+                                </div>
+                                <div class="detail-catalog-button">
+                                    <p style="width: 76px;height: 24px;font: 600 16px/24px 'Plus Jakarta Sans';margin: 0px;color: white;">Rent Now</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!----------------------car 2----------------------------->
+                        <div class="detail-catalog">
+                            <div class="detail-catalog-dautren">
+                                <div class="detail-catalog-name">
+                                    <p style="font: 700 20px/150% 'Plus Jakarta Sans';width: 128px;height: 24px;margin: 0px;">Nissan GT-R</p>
+                                    <p style="font: 700 14px/150% 'Plus Jakarta Sans';width: 128px;height: 20px;color: #90A3BF;margin: 0px;">Sport</p>
+                                </div>
+                                <img src="img/heart-red.png" style="width: 24px;height: 24px;">
+                            </div>
+                            <img src="img/image 7.png" style="width: 272px;height: 84px;">
+                            <div class="detail-catalog-spesification">
+                                <div class="detail-gas">
+                                    <img src="img/gas-station.png" style="width: 24px;height: 24px;">
+                                    <p style="font: 500 14px/24px 'Plus Jakarta Sans';margin: 0px; width: 28px;height: 24px;color: #90A3BF;">80L</p> 
+                                </div>
+                                <div class="detail-gas" style="width: 84px;">
+                                    <img src="img/Car.png" style="width: 24px;height: 24px;">
+                                    <p style="font: 500 14px/24px 'Plus Jakarta Sans';margin: 0px; width: 52px;height: 24px;color: #90A3BF;">Manual</p>
+                                </div>    
+                                <div class="detail-gas" style="width: 91px;">
+                                    <img src="img/profile-2user.png" style="width: 24px;height: 24px;">
+                                    <p style="font: 500 14px/24px 'Plus Jakarta Sans';margin: 0px; width: 60px;height: 24px;color: #90A3BF;">2 People</p>
+                                </div>     
+                            </div>
+                            <div class="detail-catalog-duoi">
+                                <div class="detail-catalog-price">
+                                    <p style="font: 700 20px 'Plus Jakarta Sans';width: 128px;height: 24px;margin: 0px;">$80.00/ <span style="font: 700 14px 'Plus Jakarta Sans';color: #90A3BF;">day</span></p>
+                                    <p style="font: 700 14px 'Plus Jakarta Sans';color: #90A3BF;width: 128px;height: 20px;margin: 0px;">$100.00</p>
+                                </div>
+                                <div class="detail-catalog-button">
+                                    <p style="width: 76px;height: 24px;font: 600 16px/24px 'Plus Jakarta Sans';margin: 0px;color: white;">Rent Now</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/style.js"></script>
+        <!-------------footer-------------------->
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>

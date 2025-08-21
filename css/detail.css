@@ -1,3 +1,6 @@
+* {
+    margin: 0px;
+}
 /* ------------------------detail-cars--------------------*/
 .detail-layout {
     width: 1440px;
@@ -35,7 +38,7 @@
     justify-content: space-between;
     border: 1px solid #C3D4E966;
     border-radius: 70px;
-    margin-right: 480px;
+    margin-right: 420px;
 }
 .detail-searchbox input{
     border: none;   /* bỏ khung viền mặc định */
@@ -445,6 +448,10 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 4px;
     gap: 8px;
     background: #3563E9;
+    transition: transform 0.3s ease;
+}
+.Rent-Now:hover{
+    transform: scale(1.05);
 }
 .detail-rent-now{
     width: 76px;
@@ -961,4 +968,154 @@ input[type="range"]::-webkit-slider-thumb {
     letter-spacing: -2%;
     text-align: right;
     vertical-align: middle;
+}
+.detail-menu-toggle {
+  display: none;
+}
+/* =================== MOBILE RESPONSIVE + MENU TOGGLE =================== */
+@media (max-width: 768px) {
+  /* Layout tổng thể */
+  .detail-layout {
+    width: 100%;
+    height: auto;
+  }
+
+  /* TOP BAR nhỏ gọn */
+  .detail-bar-top {
+    position: sticky;
+    top: 0px;
+    flex-direction: column;   /* xếp theo cột */
+    align-items: stretch;     /* cho full width */
+    height: auto;
+    width: 375px;
+    padding: 32px 25px;
+    gap: 12px;
+    box-sizing: border-box;
+  }
+  
+  /*---------------menu va avt------------------*/
+  .detail-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 1;
+  }
+.detail-menu-toggle{
+    display: block;
+    order: 1;
+  }
+  .detail-menu-toggle img {
+    width: 24px;
+    height: 24px;
+  }
+  .detail-profil{
+    width: 28px;
+    height: 28px;
+    order: 1;   
+    display: flex;
+    gap: 10px;
+  }
+  .detail-profil img:not(.Profil) {
+    display: none; /* chỉ giữ avatar */
+  }
+
+
+  .detail-bar-top-logo {
+    width: 108px;
+    height: 28px;
+  }
+  .detail-searchbox {
+    flex: 1;
+    width: 263px;
+    height: 48px;
+    border-width: 1px;
+    margin-right: 16px;
+  }
+
+  /* Sidebar mặc định ẩn */
+  .detail-bar-side {
+    position: fixed;
+    top: 64px; /* bằng chiều cao top bar */
+    left: -100%;
+    width: 260px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+    transition: left 0.3s ease;
+    z-index: 2000;
+    padding: 16px;
+    overflow-y: auto;
+  }
+
+  /* Khi mở thì trượt ra */
+  .detail-bar-side.active {
+    left: 0;
+  }
+
+  /* Overlay mờ khi menu mở */
+  body.menu-open {
+    overflow: hidden;
+  }
+  body.menu-open::after {
+    content: "";
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1500;
+  }
+
+  /* MAIN CONTENT chiếm toàn bộ */
+  .detail-content {
+    flex-direction: column;
+    padding: 0 12px;
+  }
+  .detail-main-content {
+    margin: 16px 0;
+    width: 100%;
+  }
+
+  /* Ảnh chính full width */
+  .anh-main {
+    width: 100%;
+    height: auto;
+  }
+  .car-img-modifier {
+    gap: 12px;
+  }
+  .car-img-modifier .thumb {
+    width: 30%;
+    height: auto;
+  }
+
+  /* CARD xe: grid 2 cột */
+  .detail-catalogue {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 16px;
+  }
+  .detail-catalog {
+    width: 48%;
+    height: auto;
+  }
+
+  /* FOOTER nhỏ gọn */
+  .detail-footer {
+    width: 100%;
+    padding: 24px;
+    height: auto;
+  }
+  .detail-footer-tren {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .detail-footer-duoi {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
 }

@@ -53,3 +53,17 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "detail.html";
         });
     });
+
+
+// ------------------ TOGGLE SIDEBAR MOBILE ------------------ //
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menuToggle");
+  const sidebar = document.querySelector(".detail-bar-side");
+
+  if (menuToggle && sidebar) {
+    menuToggle.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+      document.body.classList.toggle("menu-open");
+    });
+  }
+});

@@ -23,6 +23,7 @@
     align-items: center; 
 }
 .detail-bar-top-logo{
+    text-decoration: none;
     font: normal 700 32px 'Plus Jakarta Sans';
     color: #3563E9;
     line-height: 150%;

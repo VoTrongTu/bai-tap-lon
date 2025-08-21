@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 heart.src = "img/heart-red.png"; // tim đỏ
             }
 
-            console.log("Đã nhấn trái tim ❤️");
+            console.log("Đã nhấn trái tim ");
         });
     });
 
@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             event.preventDefault();      // chặn link mặc định
             event.stopPropagation();     // chặn nổi bọt
             window.location.href = "payment.html"; // điều hướng riêng
+
         });
     });
 });

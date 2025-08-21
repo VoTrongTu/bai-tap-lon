@@ -61,8 +61,7 @@
 }
 .search-filter{
     width: 24px;
-    height: 24px;
-    
+    height: 24px; 
 }
 .Profil-and-Notification{
     position: relative;
@@ -76,6 +75,14 @@
 .like,.Notification,.settings,.Profil{
     width: 44px;
     height: 44px;
+}
+.Profil:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+}
+.search-trang2{
+    width: auto;
+    height: auto;
 }
     /* ------------- Phần content-------- */
 .container-Content{
@@ -154,6 +161,10 @@
     justify-content: center;
     border:0px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.Button-Rent-Ads1:hover{
+    transform: scale(1.05);
 }
 .Button-Rent-Ads2{
     position: relative;
@@ -166,6 +177,10 @@
     justify-content: center;
     border:0px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.Button-Rent-Ads2:hover{
+    transform: scale(1.05);
 }
 /* chuyển đậm hơn khi đưa chuột vào*/
 .Button-Rent-Ads1:hover,
@@ -340,6 +355,12 @@
     height: 388px;
     background-color: #FFFFFF;
     border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.Catalog1:hover, .Catalog2:hover,.Catalog3:hover,.Catalog4:hover{
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .heart{
@@ -429,8 +450,10 @@
     color: #FFFFFF;
     cursor: pointer;
     border-radius: 4px;
+    transition: transform 0.3S ease;
 }
 .background-Button-Rental:hover{
+    transform: scale(1.15);
     background-color: #254BC9;
 }
 /* ------------Catalog2--------------- */
@@ -489,6 +512,14 @@
     width: 304px;
     background-color: #FFFFFF;
     border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.Catalog1-Recomen1:hover,
+.Catalog2-Recomen1:hover,
+.Catalog3-Recomen1:hover,
+.Catalog4-Recomen1:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .Catalog1-Recomen2,
 .Catalog2-Recomen2,
@@ -497,6 +528,14 @@
     width: 304px;
     background-color: #FFFFFF;
     border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.Catalog1-Recomen2:hover,
+.Catalog2-Recomen2:hover,
+.Catalog3-Recomen2:hover,
+.Catalog4-Recomen2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .image-catalog-Recomen1{
     width: 224;

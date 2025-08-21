@@ -1,6 +1,6 @@
 .container{
-    width: 1440px;
-    height: 1024px;
+    width: 1540px;
+    height: 1324px;
 }
 
 /* Navbar mặc định (PC/Laptop) */
@@ -74,7 +74,7 @@ a:hover{
 /* ---------------Desktop----------------- */
 .Desktop{
     width :100%;
-    height: 100hv;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
@@ -85,7 +85,7 @@ a:hover{
     margin-left: 0px;
     background-color: #FFFFFF;
     width :286px;
-    height: 100hv;
+    height: 1000px;
 }
 .Side-Menu{
     width :220px;
@@ -171,8 +171,7 @@ a:hover{
 /* -------------------Details-Rental-------------- */
 .Details-Rental{
     width: 534px;
-    
-    height: 836px;
+    height: 896px;
     background-color: #FFFFFF;
     padding: 24px;
     margin-top: 24px;
@@ -315,7 +314,7 @@ a:hover{
 }
 
 /* --------------------------------------------- */
-.line-bottom{
+.line1{
     width :486px;
     height: 0px;
     background-color: #C3D4E966;
@@ -342,11 +341,138 @@ a:hover{
     font: normal 700 32px 'Plus Jakarta Sans';
     color: #1A202C;
 }
-/* --------------------------------------------- */
+/* -----------------Top-Rental---------------------------- */
 .Top-Rental{
     width :524px;
     height: 342px;
     background-color: #FFFFFF;
     margin-top: 24px;
     margin-right: 24px;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    padding: 24px;
+    align-items: center;
+}
+
+.title-top-car{
+    font: normal 700 20px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.more-option{
+    margin-left: 224px;
+}
+.Pie-Chart {
+    position: relative;
+    display: inline-block;
+}
+
+.Pie-Chart img {
+    width: 220px;  /* tuỳ chỉnh kích thước ảnh */
+    height: 220px;
+
+}
+
+.data-rental-car,
+#text-rental-car {
+    position: absolute;
+    left: 45%;
+    transform: translateX(-60%);
+    display: flex;
+    margin-top: 84px;
+    text-align: center;
+   
+}
+
+.data-rental-car {
+    top:0%;
+    font: normal 700 24px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+
+#text-rental-car {
+    margin-top: -90px;
+    font: normal 500 14px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+
+.Legend-items-Sport-Car,
+.Legend-items-SUV,
+.Legend-items-Coupe,
+.Legend-items-Hatchback,
+.Legend-items-MPV{
+    display: flex;
+    justify-content: space-between;
+}
+#sport-car,
+#SUV,#Coupe,#Hatchback,#MPV{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+#Mark-Sport-Car{
+    width: 12px;
+    height: 12px;
+}
+#type{
+    font: normal 600 14px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+#data{
+    font: normal 600 14px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+/* --------------------------Recent-Transaction-------------------- */
+.Recent-Transaction{
+    width: 524px;
+    height: 500px;
+    background-color: #FFFFFF;
+    padding: 24px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.recent-car{
+    width:  172px;
+    height: 70px;
+}
+
+.Transaction{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.Name-Type{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+.title-Recent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#title-Recent{
+    font:normal 700 20px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.view{
+    font: normal 500 12px 'Plus Jakarta Sans';
+    color: #3563E9;
+}
+.name{
+    font: normal 700 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+.type{
+    font: normal 500 12px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.date{
+    font: normal 500 12px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+#price{
+    font: normal 700 16px 'Plus Jakarta Sans';
+    color: #1A202C;
 }

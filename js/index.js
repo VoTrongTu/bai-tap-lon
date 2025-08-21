@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.addEventListener("click", (event) => {
             event.preventDefault();      // chặn link mặc định
             event.stopPropagation();     // chặn nổi bọt
-            window.location.href = "detail.html"; // điều hướng riêng
+            window.location.href = "payment.html"; // điều hướng riêng
         });
     });
 });

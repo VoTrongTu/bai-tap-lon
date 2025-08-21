@@ -1,0 +1,542 @@
+/* =================== MOBILE RESPONSIVE + MENU TOGGLE =================== */
+@media (max-width: 768px) {
+  /* Layout tổng thể */
+  .detail-layout {
+    width: 100%;
+    height: auto;
+  }
+
+  /* TOP BAR nhỏ gọn */
+  .detail-bar-top {
+    position: sticky;
+    top: 0px;
+    flex-direction: column;   /* xếp theo cột */
+    align-items: stretch;     /* cho full width */
+    height: auto;
+    width: 100%;
+    padding: 32px 25px;
+    gap: 12px;
+    box-sizing: border-box;
+  }
+  
+  /*---------------menu va avt------------------*/
+  .detail-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 1;
+  }
+.detail-menu-toggle{
+    display: block;
+    order: 1;
+  }
+  .detail-menu-toggle img {
+    width: 24px;
+    height: 24px;
+  }
+  .detail-profil{
+    width: 28px;
+    height: 28px;
+    order: 1;   
+    display: flex;
+    gap: 10px;
+  }
+  .detail-profil img:not(.Profil) {
+    display: none; /* chỉ giữ avatar */
+  }
+  /*----------------------logo media---------------------*/
+  .detail-bar-top-logo {
+    order: 2;
+    margin: 0px;
+    width: 108px;
+    height: 28px;
+    line-height: 150%;
+  }
+  .detail-bar-top-logo-text{
+    margin: 0px;
+    width: 108px;
+    height: 28px;
+    font-size: 24px;
+  }
+  /*------------------------searchbox media---------------------*/
+  .detail-searchbox {
+    order: 3;
+    width: auto;
+    height: 48px;
+    border-radius: 1px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+  }
+  .detail-searchbox input{
+    width: 150px;
+    height: 24px;
+    font-size: 14px;
+    color: #90A3BF;
+  }
+  /*--------------------------side bar media-------------------------*/
+  /* Sidebar mặc định ẩn */
+  .detail-bar-side {
+    position: fixed;
+    top: 64px; /* bằng chiều cao top bar */
+    left: -100%;
+    width: 260px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+    transition: left 0.3s ease;
+    z-index: 2000;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  /* Khi mở thì trượt ra */
+  .detail-bar-side.active {
+    left: 0;
+  }
+  /* Overlay mờ khi menu mở */
+  body.menu-open {
+    overflow: hidden;
+  }
+  body.menu-open::after {
+    content: "";
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1500;
+  }
+
+  /*---------------------------------main content-----------------------*/
+  .detail-content {
+    flex-direction: column;
+    padding: 32px 24px 0 24px;
+  }
+  .detail-main-content {
+    margin: 0px;
+    width: 100%;
+  }
+  /*-------------------------info-----------------------------*/
+  .detail-content-info{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .detail-car-info{
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .car-name{
+    padding: 0px;
+    width: 174px;
+    height: 46px;
+    gap: 6px;
+  }
+  .Nissan{
+    margin: 0px;
+    width: 174px;
+    height: 24px;
+    font-size: 20px;
+  }
+  .rv-nissan{
+    width: 174px;
+    height: 16px;
+    gap: 8px;
+  }
+  .rv-star{
+    width: 76px;
+    height: 12px;
+    gap: 4px;
+  }
+  .rv-440{
+    margin: 0px;
+    width: 90px;
+    height: 16px;
+    font-size: 12px;
+  }
+  .detail-heart{
+    display: none;
+  }
+  .Nissan-rv{
+    margin: 16px 0 0 0;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+  }
+  .abc{
+    font: 400 12px/200% 'Plus Jakarta Sans';
+  }
+  .Nissan-Spesification{
+    margin-top: 16px;
+    padding: 0px;
+    display: flex;
+    gap: 47px;
+    height: auto;
+    width: auto;
+  }
+  .Spesification{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .Spesification-tren{
+    height: auto;
+    width: auto;
+    display: flex;
+    gap: 24px;
+  }
+  .Spesification-text{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+  }
+  .Spesification-duoi{
+    height: auto;
+    width: auto;
+    gap: 24px;
+  }
+  .detail-phancuoi{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+  }
+  .detail-price{
+    margin-top: 32px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .detail-price-tren{
+    width: 120px;
+    height: 32px;
+    font-size: 20px;
+  }
+  .detail-price-duoi{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+  }
+  .Rent-Now{
+    padding: 0 20px 0 20px;
+    margin:32px 0 0 0;
+    width: 140px;
+    height: 56px;
+  }
+  .detail-review{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .detail-total-review{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+  .detail-rv-13{
+    width: auto;
+    height: 28px;
+    padding: 0 20px 0 20px;
+  }
+  .detail-review-layout{
+    width: auto;
+    height: auto;
+    display: flex;
+  }
+  .detail-reviewer{
+    display: flex;
+    align-items: center;
+  }
+  .detail-profil-reviewer{
+    width: auto;
+    height: auto;
+    border-radius: 60px;
+  }
+  .detail-name-reviewer{
+    width: auto;
+    height: auto;
+    margin-left: 8px;
+  }
+  .detail-name-rv{
+    width: auto;
+    height: auto;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+  }
+  .detail-rv-CEO{
+    font: 500 12px / 100% 'Plus Jakarta Sans';
+    width: auto;
+  }
+  .detail-date-reviewer{
+    margin-left: 61px;
+    width: auto;
+    height: auto;
+  }
+  .detail-date-rv{
+    font-size: 12px;
+    width: auto;
+    height: auto;
+  }
+  .detail-rv-star{
+    width: 76px;
+    height: 12px;
+  }
+  .detail-describe-reviewer{
+    width: auto;
+    height: auto;
+    margin: 0 0 0 52px;
+  }
+  .detail-describe-rv{
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;          /* chỉ hiển thị 2 dòng */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+  .detail-showall{
+    margin: 0 0 0 95px;
+    width: auto;
+    height: auto;
+  }
+  .detail-recent-layout{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .detail-recent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 190px;
+  }
+  .recent-car-text{
+    width: auto;
+    height: auto;
+    padding: 0px;
+  }
+  .detail-recent-text{
+    font-size: 14px;
+    text-align: unset;
+  }
+  .recent-viewall{
+    width: auto;
+    height: auto;
+    padding: 0px;
+    display: flex;
+  }
+  .detail-recent-viewall{
+    height: auto;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: unset;
+  }
+/*---------------------------anh main media--------------------------*/
+  .anh-main {
+    width: 100%;
+    height: auto;
+  }
+  .car-img-modifier {
+    gap: 12px;
+  }
+  .car-img-modifier .thumb {
+    width: 31%;
+    height: auto;
+  }
+
+/*-------------------------detail catalogue media--------------------------*/
+  .detail-catalogue {
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    overflow-x: auto;     /* cho phép cuộn ngang */
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+  }
+  .detail-catalogue::-webkit-scrollbar {
+    display: none; /* ẩn thanh scroll cho đẹp */
+  }
+  .detail-catalog {
+    background: white;
+    flex: 0 0 80%;   /* mỗi xe chiếm 80% màn hình */
+    scroll-snap-align: start; /* dừng đúng vị trí */
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .detail-catalogue .detail-catalog:nth-child(n+3) {
+    display: none;
+  }
+  .detail-catalog-dautren{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .detail-catalog-name{
+    width: auto;
+    height: auto;
+  }
+  .detail-catalog-namecar{
+    width: auto;
+    font-size: 16px;
+  }
+  .detail-catalog-kind{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+  }
+  .detail-catalog-car-img{
+    width: 100%;
+  }
+  .detail-catalog-spesification{
+    margin: 32px 0 28px 0;
+    width: auto;
+    height: auto;
+  }
+  .detail-gas{
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+  .detail-catalog-gas{
+    width: 14px;
+    height: 14px;
+  }
+  .detail-catalog-gas-text{
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+  }
+  .detail-catalog-car-text{
+    width: auto;
+    height: auto;
+  }
+  /*----------------------------recommendation media---------------------------*/
+  .detail-recommendation-layout{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .detail-recommendation{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 125px;
+  }
+  .detail-recommendation-car{
+    padding: 0px;
+    width: auto;
+    height: auto;
+  }
+  .detail-recommendation-text{
+    font-size: 14px;
+  }
+  /* FOOTER nhỏ gọn */
+  .detail-footer {
+    width: 100%;
+    padding: 48px 24px 24px 24px;
+    height: auto;
+  }
+  .detail-footer-tren {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .detail-footer-logo{
+    width: 216px;
+    height: 92px;
+  }
+  .detail-footer-logo-text{
+    width: auto;
+    height: auto;
+    font-size: 24px;
+  }
+  .detail-footer-logo-describe{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+  }
+  .detail-about{
+    width: auto;
+    height: auto;
+    margin: 0px;
+  }
+  .detail-community{
+    width: auto;
+    height: auto;
+    margin: 0px;
+  }
+  .detail-socials{
+    width: auto;
+    height: auto;
+    margin: 0px;
+  }
+  .detail-about, .detail-socials {
+    flex: 1 1 45%;  
+    order: 1;
+  }
+  .detail-community {
+    flex: 1 1 100%;  
+    order: 2;
+  }
+  .detail-footer-line{
+    display: none;
+  }
+  .detail-footer-duoi {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+  }
+  .detail-footer-duoi-privacy{
+    margin: 0px;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    order: 1;
+  }
+  .detail-footer-duoi-terms{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    order: 1;
+  }
+  .detail-footer-left{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .detail-footer-duoi-copyright{
+    margin: 0px;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    order: 2;
+  }
+}

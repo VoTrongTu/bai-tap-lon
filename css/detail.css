@@ -29,6 +29,12 @@
     margin-right: 60px;
     margin-left: 40px;
 }
+.detail-bar-top-logo-text{
+    width: 148px;
+    height: 44px;
+    font: 700 32px/150% 'Plus Jakarta Sans';
+    color: #3563E9;
+}
 .detail-searchbox{
     width:  492px;
     height: 44px;
@@ -49,10 +55,7 @@
     flex: 1;
     margin: 0 10px;
 }
-.detail-searchbox-img {
-    width: 24px;
-    height: 24px;
-}
+.detail-searchbox-img,
 .detail-searchbox-filter{
     width: 24px;
     height: 24px;
@@ -471,6 +474,9 @@ input[type="range"]::-webkit-slider-thumb {
     background: #FFFFFF;
     padding: 24px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 .detail-total-review{
     display: flex;
@@ -481,6 +487,8 @@ input[type="range"]::-webkit-slider-thumb {
     gap: 12px;
 }
 .detail-total-review-text{
+    display: flex;
+    align-items: center;
     margin: 0px;
     width: 80px;
     height: 28px;
@@ -505,15 +513,15 @@ input[type="range"]::-webkit-slider-thumb {
     width: 968px;
     height: 124px;
     opacity: 1;
-    margin-bottom: 24px;
-    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 .detail-reviewer{
     height: auto;
     width: auto;
     display: flex;
     flex-direction: row;
-    margin-bottom: 12px;
 }
 .detail-profil-reviewer{
     width: 56px;
@@ -591,6 +599,7 @@ input[type="range"]::-webkit-slider-thumb {
     font: 400 14px/200% 'Plus Jakarta Sans';
     letter-spacing: -2%;
     color: #596780;
+    line-height: 24px;
 }
 .detail-showall{
     display: flex;
@@ -745,6 +754,20 @@ input[type="range"]::-webkit-slider-thumb {
     height: 24px;
     opacity: 1;
     gap: 8px;
+}
+.detail-car{
+    align-items: center;
+    display: flex;
+    width: 84px;
+    height: 24px;
+    gap: 8px;
+}
+.detail-people{
+    align-items: center;
+    width: 91px;
+    height: 24px;
+    gap: 7px;
+    display: flex;
 }
 .detail-catalog-gas{
     width: 24px;
@@ -937,6 +960,24 @@ input[type="range"]::-webkit-slider-thumb {
     vertical-align: middle;
     color: #13131399;
 }
+.detail-community{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 152px;
+    height: 244px;
+    opacity: 1;
+    gap: 24px;
+}
+.detail-socials{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 152px;
+    height: 244px;
+    opacity: 1;
+    gap: 24px;
+}
 .detail-footer-line{
     display: flex;
     margin: 36px 0 36px 0;
@@ -969,153 +1010,19 @@ input[type="range"]::-webkit-slider-thumb {
     text-align: right;
     vertical-align: middle;
 }
+.detail-footer-duoi-terms{
+    width: 144px;
+    height: 24px;
+    opacity: 1;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    letter-spacing: -2%;
+}
+.detail-footer-left{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
 .detail-menu-toggle {
   display: none;
-}
-/* =================== MOBILE RESPONSIVE + MENU TOGGLE =================== */
-@media (max-width: 768px) {
-  /* Layout tổng thể */
-  .detail-layout {
-    width: 100%;
-    height: auto;
-  }
-
-  /* TOP BAR nhỏ gọn */
-  .detail-bar-top {
-    position: sticky;
-    top: 0px;
-    flex-direction: column;   /* xếp theo cột */
-    align-items: stretch;     /* cho full width */
-    height: auto;
-    width: 375px;
-    padding: 32px 25px;
-    gap: 12px;
-    box-sizing: border-box;
-  }
-  
-  /*---------------menu va avt------------------*/
-  .detail-top-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    order: 1;
-  }
-.detail-menu-toggle{
-    display: block;
-    order: 1;
-  }
-  .detail-menu-toggle img {
-    width: 24px;
-    height: 24px;
-  }
-  .detail-profil{
-    width: 28px;
-    height: 28px;
-    order: 1;   
-    display: flex;
-    gap: 10px;
-  }
-  .detail-profil img:not(.Profil) {
-    display: none; /* chỉ giữ avatar */
-  }
-
-
-  .detail-bar-top-logo {
-    width: 108px;
-    height: 28px;
-  }
-  .detail-searchbox {
-    flex: 1;
-    width: 263px;
-    height: 48px;
-    border-width: 1px;
-    margin-right: 16px;
-  }
-
-  /* Sidebar mặc định ẩn */
-  .detail-bar-side {
-    position: fixed;
-    top: 64px; /* bằng chiều cao top bar */
-    left: -100%;
-    width: 260px;
-    height: 100%;
-    background: #fff;
-    box-shadow: 2px 0 6px rgba(0,0,0,0.2);
-    transition: left 0.3s ease;
-    z-index: 2000;
-    padding: 16px;
-    overflow-y: auto;
-  }
-
-  /* Khi mở thì trượt ra */
-  .detail-bar-side.active {
-    left: 0;
-  }
-
-  /* Overlay mờ khi menu mở */
-  body.menu-open {
-    overflow: hidden;
-  }
-  body.menu-open::after {
-    content: "";
-    position: fixed;
-    top: 64px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.4);
-    z-index: 1500;
-  }
-
-  /* MAIN CONTENT chiếm toàn bộ */
-  .detail-content {
-    flex-direction: column;
-    padding: 0 12px;
-  }
-  .detail-main-content {
-    margin: 16px 0;
-    width: 100%;
-  }
-
-  /* Ảnh chính full width */
-  .anh-main {
-    width: 100%;
-    height: auto;
-  }
-  .car-img-modifier {
-    gap: 12px;
-  }
-  .car-img-modifier .thumb {
-    width: 30%;
-    height: auto;
-  }
-
-  /* CARD xe: grid 2 cột */
-  .detail-catalogue {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    gap: 16px;
-  }
-  .detail-catalog {
-    width: 48%;
-    height: auto;
-  }
-
-  /* FOOTER nhỏ gọn */
-  .detail-footer {
-    width: 100%;
-    padding: 24px;
-    height: auto;
-  }
-  .detail-footer-tren {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .detail-footer-duoi {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
 }

@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const hearts = document.querySelectorAll(".heart");
   hearts.forEach(heart => {
     heart.addEventListener("click", () => {
-      heart.src = heart.src.includes("heart-red.png") ? "img/heart.png" : "img/heart-red.png";
+      heart.src = heart.src.includes("heart-red.png")
+        ? "img/heart.png"
+        : "img/heart-red.png";
     });
   });
 
@@ -15,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- Thanh range (chặn lỗi nếu thiếu) ---
+  // --- Thanh range ---
   const slider = document.getElementById("detail-range");
   if (slider) {
     const updateSlider = () => {
@@ -34,36 +36,56 @@ document.addEventListener("DOMContentLoaded", () => {
   const defaultImage = "img/View.png";
 
   thumbs.forEach(thumb => {
-    thumb.addEventListener("click",function() {
-        if(this.src.includes("img/view-1.png")) {
-            mainCarImg.src = defaultImage;
-        }else{
-            mainCarImg.src = this.src;
-        }
+    thumb.addEventListener("click", function () {
+      if (this.src.includes("img/view-1.png")) {
+        mainCarImg.src = defaultImage;
+      } else {
+        mainCarImg.src = this.src;
+      }
     });
   });
 
-  // Log để chắc chắn file JS đã load
-  console.log("style.js loaded OK");
-});
-
-// ------------------chuyển về detail web mỗi khi nhấn vào catalog---------------------------//
-    document.querySelectorAll(".detail-catalog").forEach(item => {
-        item.addEventListener("click", () => {
-            window.location.href = "detail.html";
-        });
+  // --- Chuyển về detail web khi nhấn catalog ---
+  document.querySelectorAll(".detail-catalog").forEach(item => {
+    item.addEventListener("click", () => {
+      window.location.href = "detail.html";
     });
+  });
 
-
-// ------------------ TOGGLE SIDEBAR MOBILE ------------------ //
-document.addEventListener("DOMContentLoaded", () => {
+  // ------------------ TOGGLE SIDEBAR MOBILE ------------------ //
   const menuToggle = document.getElementById("menuToggle");
   const sidebar = document.querySelector(".detail-bar-side");
 
   if (menuToggle && sidebar) {
+    // tạo overlay
+    const overlay = document.createElement("div");
+    overlay.id = "overlay";
+    document.body.appendChild(overlay);
+
     menuToggle.addEventListener("click", () => {
       sidebar.classList.toggle("active");
+      overlay.classList.toggle("show");
       document.body.classList.toggle("menu-open");
     });
+
+    // click ra ngoài -> đóng
+    overlay.addEventListener("click", () => {
+      sidebar.classList.remove("active");
+      overlay.classList.remove("show");
+      document.body.classList.remove("menu-open");
+    });
+  }
+
+  console.log("style.js loaded OK");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const desc = document.getElementById("desc");
+
+  if (window.innerWidth <= 768) { // chỉ áp dụng mobile
+    const maxChars = 60; // số ký tự muốn giữ lại
+    if (desc.innerText.length > maxChars) {
+      desc.innerText = desc.innerText.substring(0, maxChars) + "...";
+    }
   }
 });

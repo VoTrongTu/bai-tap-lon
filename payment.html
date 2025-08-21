@@ -7,14 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/payment.css">
-    <script src="js/index.js"></script> 
+    <!-- <script src="js/index.js"></script>  -->
     <title>RentSwift - Nền tảng cho thuê xe</title>
 </head>
 <body>
     <div class="container-Payment"></div>
         <nav class="Nav-Bar-Top">
             <div class="logo">
-                <p>MORENT</p>
+                <a href="index.html">MORENT</a>
             </div>
         
             <div class="Profil-and-Notification">
@@ -65,31 +65,40 @@
                         <div class="Input-Location">
                             <label class="Loca">Locations</label>
                             <select id="city" name="City">
-                                <option value="">Select your city</option>
+                                 <option value="">Select your city</option>
                                 <option value="hanoi">Hà Nội</option>
                                 <option value="hcm">TP. Hồ Chí Minh</option>
                                 <option value="danang">Đà Nẵng</option>
                                 <option value="cantho">Cần Thơ</option>
+                                <option value="cantho">Hải Phòng</option>
+                                <option value="cantho">Nha Trang</option>
+                                <option value="cantho">Huế</option>
                             </select>
                         </div>
                         <div class="Input-Date">
                             <label class="date">Date</label>
                             <select id="Date" name="Date">
-                                <option value="">Select your date</option>
-                                <option value="">1 day</option>
-                                <option value="">2 days</option>
-                                <option value="">3 days</option>
-                                <option value="">a week</option>
+                                 <option value="">Select your date</option>
+                                <option value="">25 August 2025</option>
+                                <option value="">26 August 2025</option>
+                                <option value="">27 August 2025</option>
+                                <option value="">28 August 2025</option>
+                                <option value="">29 August 2025</option>
+                                <option value="">30 August 2025</option>
+                                <option value="">31 August 2025</option>
                             </select>
                         </div>
                         <div class="Input-Time">
                             <label class="time">Time</label>
                             <select id="Time" name="Time">
                                 <option value="">Select your time</option>
-                                <option value="">3 hours</option>
-                                <option value="">6 hours</option>
-                                <option value="">12 hours</option>
-                                <option value="">24 hours</option>
+                                <option value="">7:00</option>
+                                <option value="">8:00</option>
+                                <option value="">10:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">20:00</option>
+                                <option value="">22:00</option>
                             </select>
                         </div>
                     </div>
@@ -106,26 +115,35 @@
                                 <option value="hcm">TP. Hồ Chí Minh</option>
                                 <option value="danang">Đà Nẵng</option>
                                 <option value="cantho">Cần Thơ</option>
+                                <option value="cantho">Hải Phòng</option>
+                                <option value="cantho">Nha Trang</option>
+                                <option value="cantho">Huế</option>
                             </select>
                         </div>
                         <div class="Input-Date">
                             <label class="date">Date</label>
                             <select id="Date" name="Date">
                                 <option value="">Select your date</option>
-                                <option value="">1 day</option>
-                                <option value="">2 days</option>
-                                <option value="">3 days</option>
-                                <option value="">a week</option>
+                                <option value="">25 August 2025</option>
+                                <option value="">26 August 2025</option>
+                                <option value="">27 August 2025</option>
+                                <option value="">28 August 2025</option>
+                                <option value="">29 August 2025</option>
+                                <option value="">30 August 2025</option>
+                                <option value="">31 August 2025</option>
                             </select>
                         </div>
                         <div class="Input-Time">
                             <label class="time">Time</label>
                             <select id="Time" name="Time">
                                 <option value="">Select your time</option>
-                                <option value="">3 hours</option>
-                                <option value="">6 hours</option>
-                                <option value="">12 hours</option>
-                                <option value="">24 hours</option>
+                                <option value="">7:00</option>
+                                <option value="">8:00</option>
+                                <option value="">10:00</option>
+                                <option value="">12:00</option>
+                                <option value="">13:00</option>
+                                <option value="">20:00</option>
+                                <option value="">22:00</option>
                             </select>
                         </div>
                     </div>
@@ -191,9 +209,9 @@
                             <p>I agree with our terms and conditions and privacy policy.</p>
                         </label>
                     </div>
-                    <button class="Rent-Now">
+                    <a href="payment.html" class="Rent-Now">
                         <p class="rent-now">Rent Now</p>
-                    </button>
+                    </a>
                     <div class="Safe-Data">
                         <img src="img/ic-security-safety.png" alt="Security" class="img-Security">
                         <h4 class="All-Safe">All your data are safe</h4>

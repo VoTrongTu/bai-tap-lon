@@ -389,6 +389,7 @@
 .Look{
     width: 132px;
     height: 108px;
+    margin-bottom: 24px;
 }
 .Car-Name-Review{
     display: flex;
@@ -398,7 +399,7 @@
     margin: 0px;
     width: 220px;
     height: 40px;
-    font: 700 32px/150% 'Plus Jakarta Sans';
+    font:normal 700 32px 'Plus Jakarta Sans';
 }
 .star{
     width: 108px;
@@ -462,4 +463,10 @@
 .total{
     font: normal 700 32px 'Plus Jakarta Sans';
     color: #1A202C;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    background-color: #8ba3ea;
 }

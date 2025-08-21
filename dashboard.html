@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>RentSwift - Nền tảng cho thuê xe</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="Nav-Bar-Top">
+            <div class="logo">
+                <a href="index.html"> MORENT </a>
+            </div>
+            <div class="search">
+                <img src="img/search-normal.png" alt="search" class="search-img">
+                <input class="search-something"   type="text" placeholder="Search something here">
+                <img src="img/filter.png" alt="filter-search" class="search-filter">
+            </div>
+            <div class="Profil-and-Notification">
+                <img src="img/Like.png" alt="Like" class="like">
+                <img src="img/Notification.png" alt="Notification" class="Notification">
+                <img src="img/Settings.png" alt="settings" class="settings">
+                <img src="img/Profil.png" alt="Profil" class="Profil">
+            </div>
+        </nav>
+        <main class="Desktop">
+            <section class="Nav-Bar-Left">
+                <div class="Side-Menu">
+                    <div class="Main-Menu">
+                        <p class="title">M A I N  M E N U</p>
+                        <div id="Main-Menu">
+                            <div class="Text-icon">
+                                <img src="img/home.png" alt="home" id="icon">
+                                <p id="text">Dashboard</p>
+                            </div>
+                            <div id="Text-icon">
+                                <img src="img/car copy.png" alt="car-copy" id="icon">
+                                <p id="text">Car Rent</p>
+                            </div>
+                            <div id="Text-icon">
+                                <img src="img/chart.png" alt="chart" id="icon">
+                                <p id="text">Insight</p>
+                            </div>
+                            <div id="Text-icon">
+                                <img src="img/empty-wallet-change.png" alt="empty-wallet-change" id="icon">
+                                <p id="text">Reimburse</p>
+                            </div>
+                            <div id="Text-icon">
+                                <img src="img/message.png" alt="message" id="icon">
+                                <p id="text">Inbox</p>
+                            </div>
+                             <div id="Text-icon">
+                                <img src="img/calendar.png" alt="calendar" id="icon">
+                                <p id="text">Calender</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Preferences">
+                        <p class="title">P R E F E R E N C E S</p>
+                        <div id="Preferences">
+                            <div id="Text-icon">
+                                <img src="img/setting.png" alt="setting" id="icon">
+                                <p id="text">Settings</p>
+                            </div>
+                            <div id="Text-icon">
+                                <img src="img/info-circle.png" alt="info-circle" id="icon">
+                                <p id="text">Help & Center</p>
+                            </div>
+                            <div class="Mode">
+                                <div id="Text-icon">
+                                    <img src="img/briefcase.png" alt="briefcase" id="icon">
+                                    <p id="text">Dark Mode</p>
+                                </div>
+                                <div class="background-Mode">
+                                    <img class="light" src="img/Group 427320607.png" alt="Light">
+                                    <img src="img/Group 427320608.png" alt="Dark" class="dark">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="LayOut">
+                    <img src="img/logout.png" alt="Logout" class="icon">
+                    <p id="text">Log Out</p>
+                </div>
+            
+            </section>
+            <section class="Details-Rental">
+                <h3 class="title-details">Details Rental</h3>
+                <img src="img/Maps.png" alt="Map" class="Map">
+                <div class="look-and-carname">
+                    <img src="img/Look.png" alt="Look" class="Look">
+                    <div class="Car-Name-Review">
+                        <h2 class="Name-Car">Nissan GT - R</h2>
+                        <p class="type-car">Sport Car</p>
+                    </div>
+                    <p class="code">#9761</p>
+                </div>
+                 <div class="Drop-Pick-Switch">
+                    <div class="Pick-Up-Containt">
+                        <div class="Pick-Up">
+                            <div class="background-mark"><div class="mark"></div></div>
+                            <p id="Pick-Up">Pick - Up</p>
+                        </div>
+                        <div class="Pick-Up-Infor">
+                            <div class="Location">
+                                <label class="Loca">Locations</label>
+                                <select id="city" name="city">
+                                    <option value="">Select your city</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hcm">TP. Hồ Chí Minh</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="cantho">Cần Thơ</option>
+                                    <option value="cantho">Hải Phòng</option>
+                                    <option value="cantho">Nha Trang</option>
+                                    <option value="cantho">Huế</option>
+                                </select>
+                            </div>
+                            <div class="line"></div>
+                            <div class="DATE">
+                                <label class="date">Date</label>
+                                <select id="Date" name="city">
+                                    <option value="">Select your date</option>
+                                    <option value="">25 August 2025</option>
+                                    <option value="">26 August 2025</option>
+                                    <option value="">27 August 2025</option>
+                                    <option value="">28 August 2025</option>
+                                    <option value="">29 August 2025</option>
+                                    <option value="">30 August 2025</option>
+                                    <option value="">31 August 2025</option>
+                                </select>
+                            </div>
+                            <div class="line"></div>
+                            <div class="TIME">
+                                <label class="time">Time</label>
+                                <select id="Time" name="city">
+                                    <option value="">Select your time</option>
+                                    <option value="">7:00</option>
+                                    <option value="">8:00</option>
+                                    <option value="">10:00</option>
+                                    <option value="">12:00</option>
+                                    <option value="">13:00</option>
+                                    <option value="">20:00</option>
+                                    <option value="">22:00</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="Drop-Off-Containt">
+                        <div class="Drop-Off">
+                            <div class="background-mark"><div class="mark-Drop-Off"></div></div>
+                            <p id="Drop-Off">Drop - Up</p>
+                        </div>
+                        <div class="Drop-Off-Infor">
+                            <div class="Location">
+                                <label class="Loca">Locations</label>
+                                <select id="city" name="city">
+                                    <option value="">Select your city</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hcm">TP. Hồ Chí Minh</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="cantho">Cần Thơ</option>
+                                    <option value="cantho">Hải Phòng</option>
+                                    <option value="cantho">Nha Trang</option>
+                                    <option value="cantho">Huế</option>
+                                </select>
+                            </div>
+                            <div class="line"></div>
+                            <div class="DATE">
+                                <label class="date">Date</label>
+                                <select id="Date" name="city">
+                                    <option value="">Select your date</option>
+                                    <option value="">25 August 2025</option>
+                                    <option value="">26 August 2025</option>
+                                    <option value="">27 August 2025</option>
+                                    <option value="">28 August 2025</option>
+                                    <option value="">29 August 2025</option>
+                                    <option value="">30 August 2025</option>
+                                    <option value="">31 August 2025</option>
+                                </select>
+                            </div>
+                            <div class="line"></div>
+                            <div class="TIME">
+                                <label class="time">Time</label>
+                                <select id="Time" name="city">
+                                    <option value="">Select your time</option>
+                                    <option value="">7:00</option>
+                                    <option value="">8:00</option>
+                                    <option value="">10:00</option>
+                                    <option value="">12:00</option>
+                                    <option value="">13:00</option>
+                                    <option value="">20:00</option>
+                                    <option value="">22:00</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-bottom"><hr></div>
+                </div>
+                <div class="Total-Rental-Price">
+                    <div class="Total">
+                        <h3 id="total">Total Rental Price</h3>
+                        <p id="cation-total">Overall price and includes rental discount</p>
+                    </div>
+                    <div class="total-price">$80.00</div>
+                </div>
+            </section>
+            <section class="Top-Rental"> 
+                
+            </section>
+        </main>
+    </div>
+</body>
+</html>

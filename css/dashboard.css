@@ -1,0 +1,352 @@
+.container{
+    width: 1440px;
+    height: 1024px;
+}
+
+/* Navbar mặc định (PC/Laptop) */
+.Nav-Bar-Top {
+    width: 100%;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* logo bên trái, search giữa, profile bên phải */
+    padding-left: 60px;
+    padding-right: 32px;
+}
+
+.search{
+    width:492px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 70px;
+}
+
+.logo{
+    font: normal 700 32px 'Plus Jakarta Sans';
+    color: #3563E9;
+    line-height: 150%;
+    margin-right: 64px;
+}
+
+.search-img{
+    width :24px;
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.search-something{
+    width :40%;
+    height: 90%;
+    font: normal 500 14px 'Plus Jakarta Sans';      
+    line-height: 150%;
+    margin-right: 190px;
+    border :0px;
+    outline: none;              /* bỏ viền xanh khi focus */
+    background: transparent;    /* nền trong suốt */
+}
+.search-filter{
+    width: 24px;
+    height: 24px;
+    
+}
+.Profil-and-Notification{
+    position: relative;
+    right: 50px;
+    margin-left: 408px;
+    width: 236px;
+    height: 44px;
+    display: flex;
+    gap: 20px;
+}
+.like,.Notification,.settings,.Profil{
+    width: 44px;
+    height: 44px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    background-color: #87a1f0;
+}
+/* ---------------Desktop----------------- */
+.Desktop{
+    width :100%;
+    height: 100hv;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    background-color: #F3F5F7;
+}
+.Nav-Bar-Left{
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: #FFFFFF;
+    width :286px;
+    height: 100hv;
+}
+.Side-Menu{
+    width :220px;
+    height: 644px;
+    margin-left: 32px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.Main-Menu{
+    width :132px;
+    height: 386px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+.Preferences{
+    width :220px;
+    height: 198px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.title{
+    font: normal 600 12px 'Plus Jakarta Sans';
+    color: #94A7CB66;
+}
+.Text-icon{
+    display: flex;
+    width :254px;
+    height: 56px;
+    background-color: #3563E9;
+    border-radius: 10px;
+    gap: 12px;
+    align-items: center;
+}
+#Text-icon{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+#icon{
+    width :24px;
+    height: 24px;
+}
+#text{
+    font: normal 500 16px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.Mode{
+    display: flex;
+    
+    align-items: center;
+}
+.background-Mode{
+    width :68px;
+    height: 34px;
+    display: flex;
+    background-color: #F6F7F9;
+    align-items: center;
+    justify-content: right;
+    margin-left: 27px;
+    border-radius: 49.87px;
+}
+.light{
+    width :28px;
+    height: 28px;
+    margin-left: 27px;
+}
+.dark{
+    width :28px;
+    height: 28px;
+    margin-left: 6px;
+}
+.LayOut{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 32px;
+    margin-top: 144px;
+}
+/* -------------------Details-Rental-------------- */
+.Details-Rental{
+    width: 534px;
+    
+    height: 836px;
+    background-color: #FFFFFF;
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.title-details{
+    font: normal 700 20px 'Plus Jakarta Sans';
+    color: #1A202C;
+    margin-left: 24px;
+}
+
+.Map{
+    width :486px;
+    height: 272px;
+    margin-left: 24px;
+}
+.look-and-carname{
+    display: flex;
+    position: relative;
+    gap: 16px;
+    margin-left: 24px;
+    margin-top: 32px;
+}
+.Look{
+    display: flex;
+    gap: 16px;
+}
+.Car-Name-Review{
+    display:     flex;
+    flex-direction: column;
+}
+.Name-Car{
+    margin: 0px;
+    width: 220px;
+    height: 40px;
+    font:normal 700 32px  'Plus Jakarta Sans';
+}
+.code{
+    font: normal 500 14px 'Plus Jakarta Sans';
+    color: #3D5278;
+    margin-left:66px;   
+}
+.Sport Car{
+    font: normal 500 14px 'Plus Jakarta Sans';
+    color: #3D5278;
+}
+
+.Drop-Pick-Switch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    margin-top: 32px;
+    
+}
+.Pick-Up-Containt,
+.Drop-Off-Containt{
+    position: relative;
+    width :582px;
+    height: 132px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    /* gap: 8px; */
+    
+}
+.Pick-Up,
+.Drop-Off{
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    padding-left: 48px;
+    /* padding-top: 24px;  */
+}
+.background-mark{
+    width: 16px;
+    height: 16px;
+    border-radius: 70px;
+    background-color: #3563E94D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mark,.mark-Drop-Off{
+    width: 8px;
+    height: 8px;
+    background-color: #3563E9;
+    border-radius: 70px;
+    cursor: pointer;
+}
+.mark-Drop-Off{
+    background-color: #54A6FF;
+}
+#Pick-Up,
+#Drop-Off{
+    font: normal 600 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+    line-height: 150%;
+}
+.Pick-Up-Infor,
+.Drop-Off-Infor{
+    display: flex;
+    padding-left: 48px;
+    
+}
+.DATE,.TIME{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 24px;
+}
+
+.Loca,.date,.time{
+    font: normal 700 16px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+
+#city{
+    display: flex;
+    position: absolute;
+    width: 126px;
+    height: 20px;
+    outline: none;
+    font: normal 500 12px 'Plus Jakarta Sans';
+    color: #90A3BF;
+    line-height: 100%;
+    border: 0;
+    margin-top: 8px;
+}
+#Date,#Time{
+    border :0;
+    font: normal 500 12px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+
+.line{
+    width :1px;
+    height: 58px;
+    background-color: #C3D4E966;
+    margin-left: 73px;
+}
+
+/* --------------------------------------------- */
+.line-bottom{
+    width :486px;
+    height: 0px;
+    background-color: #C3D4E966;
+    margin: 0 auto;
+}
+.Total-Rental-Price{
+    width :486px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 74px;
+    margin-top: 32px;
+    margin-left: 24px;
+}
+#total{
+    font: normal 700 20px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+#caption-total{
+    font: normal 700 20px 'Plus Jakarta Sans';
+    color: #90A3BF;
+}
+.total-price{
+    font: normal 700 32px 'Plus Jakarta Sans';
+    color: #1A202C;
+}
+/* --------------------------------------------- */
+.Top-Rental{
+    width :524px;
+    height: 342px;
+    background-color: #FFFFFF;
+    margin-top: 24px;
+    margin-right: 24px;
+}

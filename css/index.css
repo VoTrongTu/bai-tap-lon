@@ -50,10 +50,14 @@
 
 }
 .search-something{
-    height: 20px;
+    width :40%;
+    height: 90%;
     font: normal 500 14px 'Plus Jakarta Sans';      
     line-height: 150%;
-    margin-right: 235px;
+    margin-right: 190px;
+    border :0px;
+    outline: none;              /* bỏ viền xanh khi focus */
+    background: transparent;    /* nền trong suốt */
 }
 .search-filter{
     width: 24px;
@@ -627,29 +631,29 @@
 
 
 /* Mobile layout */
-@media (max-width :768px) {
+/* @media (max-width :768px) {
 
     body{
-        transform: scale(0.9); /* thu nhỏ toàn bộ, kể cả chữ */
+        transform: scale(0.9); 
     }
     .Home-car-Rent{
         width: 375px;
     }
     .Nav-Bar-Top {
-        flex-direction: column;   /* xếp dọc */
-        align-items: center;  /* canh trái */
+        flex-direction: column;   
+        align-items: center;  
         justify-content: space-between ;
         height: auto;
         padding: 16px;
         width: 375px;
         margin-left: 410px;
-    }
+    } */
 
-    .search {
+    /* .search {
         margin-left: 74px;
-        margin-top: 16px;  /* đẩy search box xuống dưới logo */
+        margin-top: 16px;   
         width: 263px;
-        height: 48px;       /* search full width */
+        height: 48px;        
         border-radius: 10px;
         gap: 250px;
     }
@@ -673,7 +677,7 @@
     .Profil-and-Notification {
         position: absolute;
         margin-top: 24px;
-        left: 430px;       /* avatar + icon vẫn ở góc trên phải */
+        left: 430px;        
 
     }
 
@@ -707,5 +711,24 @@
 .Drop-Off{
     margin-left: -40px;
    
+} */
+a {
+  text-decoration: none;   /* bỏ gạch chân */
+  color: inherit;          /* giữ màu chữ gốc */
 }
-}
+
+
+.Catalog1:hover, 
+.Catalog2:hover,
+.Catalog3:hover,
+.Catalog4:hover,
+.Catalog1-Recomen1:hover,
+.Catalog2-Recomen1:hover,
+.Catalog3-Recomen1:hover,
+.Catalog4-Recomen1:hover,
+.Catalog1-Recomen2:hover,
+.Catalog2-Recomen2:hover,
+.Catalog3-Recomen2:hover,
+.Catalog4-Recomen2:hover{
+     background-color: #d3d8df;
+}  

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MORENT – Car Rental Listing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Link tới file CSS ngoài -->
+  <link rel="stylesheet" href="css/trang2.css">
+  <script src="js/trang2.js"></script>
+</head>
+
+<body>
+  <div class="Home-car-Rent">
+    <!-- phần Nav Bar Top -->
+    <header class="Nav-Bar-Top">
+      <div class="logo">
+        <p>MORENT</p>
+      </div>
+
+      <div class="search">
+  <img src="img/search-normal.png" alt="search" class="search-img">
+  <input type="text" placeholder="Search something here" class="search-input">
+  <img src="img/filter.png" alt="filter-search" class="search-filter">
+</div>
+
+
+      <div class="Profil-and-Notification">
+        <img src="img/Like.png" alt="Like" class="like">
+        <img src="img/Notification.png" alt="Notification" class="Notification">
+        <img src="img/Settings.png" alt="settings" class="settings">
+        <img src="img/Profil.png" alt="Profil" class="Profil">
+      </div>
+    </header>
+  </div>
+</body>
+
+  <main class="wrap">
+    <!-- ========== Sidebar ========== -->
+    <aside class="sidebar">
+      <div class="side-title">Type</div>
+      <div class="check"><input type="checkbox" id="t1" checked><label for="t1">Sport</label><small>(10)</small></div>
+      <div class="check"><input type="checkbox" id="t2" checked><label for="t2">SUV</label><small>(12)</small></div>
+      <div class="check"><input type="checkbox" id="t3"><label for="t3">MPV</label><small>(16)</small></div>
+      <div class="check"><input type="checkbox" id="t4"><label for="t4">Sedan</label><small>(20)</small></div>
+      <div class="check"><input type="checkbox" id="t5"><label for="t5">Coupe</label><small>(14)</small></div>
+      <div class="check"><input type="checkbox" id="t6"><label for="t6">Hatchback</label><small>(14)</small></div>
+
+      <div class="side-title">Capacity</div>
+      <div class="check"><input type="checkbox" id="c1" checked><label for="c1">2 Person</label><small>(10)</small></div>
+      <div class="check"><input type="checkbox" id="c2"><label for="c2">4 Person</label><small>(14)</small></div>
+      <div class="check"><input type="checkbox" id="c3"><label for="c3">6 Person</label><small>(12)</small></div>
+      <div class="check"><input type="checkbox" id="c4"><label for="c4">8 or More</label><small>(16)</small></div>
+
+      <div class="side-title">Price</div>
+      <input id="priceRange" class="range" type="range" min="20" max="100" step="1" value="100">
+      <div class="price-row">
+        <span class="muted">Max.</span>
+        <strong id="priceText">$100.00</strong>
+      </div>
+    </aside>
+
+    <!-- ========== Main Content ========== -->
+    <section>
+    <div class="search-panel">
+  <!-- Pick Up -->
+  <div class="search-box">
+    <h4>Pick - Up</h4>
+    <div class="fields">
+      <div>
+        <label>Locations</label>
+        <select>
+          <option value="">Select your city</option>
+          <option value="">Hà Nội</option>
+          <option value="">Tp.Hồ Chí Minh</option>
+          <option value="">Đà Nẵng</option>
+          <option value="">Cần Thơ</option>
+        </select>
+      </div>
+      <div>
+        <label>Date</label>
+        <select>
+          <option value="">Select your date</option>
+          <option value="">1 day</option>
+          <option value="">2 days</option>
+          <option value="">3 days</option>
+          <option value="">a week</option>
+        </option>
+        </select>
+      </div>
+      <div>
+        <label>Time</label>
+        <select>
+          <option value="">Select your time</option>
+          <option value="">3 hours</option>
+          <option value="">6 hours</option>
+          <option value="">12 hours</option>
+          <option value="">24 hours</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swap Button -->
+  <button class="swap-btn">⇆</button>
+
+  <!-- Drop Off -->
+  <div class="search-box">
+    <h4>Drop - Off</h4>
+    <div class="fields">
+      <div>
+        <label>Locations</label>
+        <select>
+        <option value="">Select your city</option>
+          <option value="hanoi">Hà Nội</option>
+          <option value="hcm">TP. Hồ Chí Minh</option>
+          <option value="danang">Đà Nẵng</option>
+          <option value="cantho">Cần Thơ</option>
+        </select>
+      </div>
+      <div>
+        <label>Date</label>
+        <select>
+          <option value="">Select your date</option>
+          <option value="">1 day</option>
+          <option value="">2 days</option>
+          <option value="">3 days</option>
+          <option value="">a week</option>
+        </select>
+      </div>
+      <div>
+        <label>Time</label>
+        <select>
+          <option value="">Select your time</option>
+          <option value="">Select your time</option>
+          <option value="">3 hours</option>
+          <option value="">6 hours</option>
+          <option value="">12 hours</option>
+          <option value="">24 hours</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Car Grid -->
+<div class="grid">
+
+  <!-- Card 1 -->
+  <article class="card">
+    <div class="card-top">
+      <div>
+        <div class="title">Koenigsegg</div>
+        <div class="subtitle">Sport</div>
+      </div>
+      <img src="img/heart.png" alt="favorite" class="heart">
+    </div>
+    <div class="car-img">
+      <img src="img/image 7.png" alt="Koenigsegg">
+    </div>
+    <div class="specs">
+      <div class="spec"><img src="img/gas-station.png" alt="gas" class="icon"><p>90L</p></div>
+      <div class="spec"><img src="img/car.png" alt="transmission" class="icon"><p>Manual</p></div>
+      <div class="spec"><img src="img/profile-2user.png" alt="capacity" class="icon"><p>2 People</p></div>
+    </div>
+    <div class="price-row">
+      <div><span class="price">$99.00</span><span class="per">/ day</span></div>
+      <button class="btn">Rent Now</button>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="card">
+    <div class="card-top">
+      <div>
+        <div class="title">Nissan GT-R</div>
+        <div class="subtitle">Sport</div>
+      </div>
+      <img src="img/heart.png" alt="favorite" class="heart">
+    </div>
+    <div class="car-img">
+      <img src="img/image 8.png" alt="Nissan GT-R">
+    </div>
+    <div class="specs">
+      <div class="spec"><img src="img/gas-station.png" alt="gas" class="icon"><p>80L</p></div>
+      <div class="spec"><img src="img/car.png" alt="transmission" class="icon"><p>Manual</p></div>
+      <div class="spec"><img src="img/profile-2user.png" alt="capacity" class="icon"><p>2 People</p></div>
+    </div>
+    <div class="price-row">
+      <div>
+        <span class="price">$80.00</span><span class="per">/ day</span>
+        <div class="old">$100.00</div>
+      </div>
+      <button class="btn">Rent Now</button>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="card">
+    <div class="card-top">
+      <div>
+        <div class="title">Rolls - Royce</div>
+        <div class="subtitle">Sport</div>
+      </div>
+      <img src="img/heart.png" alt="favorite" class="heart">
+    </div>
+    <div class="car-img">
+      <img src="img/image 9.png" alt="Rolls - Royce">
+    </div>
+    <div class="specs">
+      <div class="spec"><img src="img/gas-station.png" alt="gas" class="icon"><p>70L</p></div>
+      <div class="spec"><img src="img/car.png" alt="transmission" class="icon"><p>Manual</p></div>
+      <div class="spec"><img src="img/profile-2user.png" alt="capacity" class="icon"><p>4 People</p></div>
+    </div>
+    <div class="price-row">
+      <div><span class="price">$96.00</span><span class="per">/ day</span></div>
+      <button class="btn">Rent Now</button>
+    </div>
+  </article>
+
+  <!-- Card 4 -->
+  <article class="card">
+    <div class="card-top">
+      <div>
+        <div class="title">All New Rush</div>
+        <div class="subtitle">SUV</div>
+      </div>
+      <img src="img/heart.png" alt="favorite" class="heart">
+    </div>
+    <div class="car-img">
+      <img src="img/image 10.png" alt="All New Rush">
+    </div>
+    <div class="specs">
+      <div class="spec"><img src="img/gas-station.png" alt="gas" class="icon"><p>70L</p></div>
+      <div class="spec"><img src="img/car.png" alt="transmission" class="icon"><p>Manual</p></div>
+      <div class="spec"><img src="img/profile-2user.png" alt="capacity" class="icon"><p>6 People</p></div>
+    </div>
+    <div class="price-row">
+      <div>
+        <span class="price">$72.00</span><span class="per">/ day</span>
+        <div class="old">$80.00</div>
+      </div>
+      <button class="btn">Rent Now</button>
+    </div>
+  </article>
+
+  <!-- Card 5 -->
+  <article class="card">
+    <div class="card-top">
+      <div>
+        <div class="title">CR - V</div>
+        <div class="subtitle">SUV</div>
+      </div>
+      <img src="img/heart.png" alt="favorite" class="heart">
+    </div>
+    <div class="car-img">
+      <img src="img/image 12.png" alt="CR - V">
+    </div>
+    <div class="specs">
+      <div class="spec"><img src="img/gas-station.png" alt="gas" class="icon"><p>80L</p></div>
+      <div class="spec"><img src="img/car.png" alt="transmission" class="icon"><p>Manual</p></div>
+      <div class="spec"><img src="img/profile-2user.png" alt="capacity" class="icon"><p>6 People</p></div>
+    </div>
+    <div class="price-row">
+      <div><span class="price">$80.00</span><span class="per">/ day</span></div>
+      <button class="btn">Rent Now</button>
+    </div>
+  </article>
+
+  <!-- Card 6 -->
+  <article class="card">
+    <div class="card-top">
+      <div>
+        <div class="title">All New Terios</div>
+        <div class="subtitle">SUV</div>
+      </div>
+      <img src="img/heart.png" alt="favorite" class="heart">
+    </div>
+    <div class="car-img">
+      <img src="img/image 13.png" alt="All New Terios">
+    </div>
+    <div class="specs">
+      <div class="spec"><img src="img/gas-station.png" alt="gas" class="icon"><p>90L</p></div>
+      <div class="spec"><img src="img/car.png" alt="transmission" class="icon"><p>Manual</p></div>
+      <div class="spec"><img src="img/profile-2user.png" alt="capacity" class="icon"><p>6 People</p></div>
+    </div>
+    <div class="price-row">
+      <div><span class="price">$74.00</span><span class="per">/ day</span></div>
+      <button class="btn">Rent Now</button>
+    </div>
+</article>
+
+<!-- Card 7 -->
+<article class="card">
+  <div class="card-top">
+    <div>
+      <div class="title">MG ZX Exclusive</div>
+      <div class="subtitle">Hatchback</div>
+    </div>
+    <img src="img/heart.png" alt="favorite" class="heart">
+  </div>
+  <div class="car-img">
+    <img src="img/image 14.png" alt="MG ZX Exclusive">
+  </div>
+  <div class="specs">
+    <div class="spec"><img src="img/gas-station.png" alt="fuel"><p>70L</p></div>
+    <div class="spec"><img src="img/car.png" alt="transmission"><p>Electric</p></div>
+    <div class="spec"><img src="img/profile-2user.png" alt="capacity"><p>4 People</p></div>
+  </div>
+  <div class="price-row">
+    <div>
+      <span class="price">$72.00</span><span class="per">/ day</span>
+      <div class="old">$80.00</div>
+    </div>
+    <button class="btn">Rent Now</button>
+  </div>
+</article>
+
+<!-- Card 8 -->
+<article class="card">
+  <div class="card-top">
+    <div>
+      <div class="title">MG ZX Exclusive</div>
+      <div class="subtitle">SUV</div>
+    </div>
+    <img src="img/heart.png" alt="favorite" class="heart">
+  </div>
+  <div class="car-img">
+    <img src="img/image 15.png" alt="MG ZX Exclusive">
+  </div>
+  <div class="specs">
+    <div class="spec"><img src="img/gas-station.png" alt="fuel"><p>80L</p></div>
+    <div class="spec"><img src="img/car.png" alt="transmission"><p>Manual</p></div>
+    <div class="spec"><img src="img/profile-2user.png" alt="capacity"><p>4 People</p></div>
+  </div>
+  <div class="price-row">
+    <div><span class="price">$80.00</span><span class="per">/ day</span></div>
+    <button class="btn">Rent Now</button>
+  </div>
+</article>
+
+<!-- Card 9 -->
+<article class="card">
+  <div class="card-top">
+    <div>
+      <div class="title">MG ZX Excite</div>
+      <div class="subtitle">Hatchback</div>
+    </div>
+    <img src="img/heart.png" alt="favorite" class="heart">
+  </div>
+  <div class="car-img">
+    <img src="img/image 17.png" alt="MG ZX Excite">
+  </div>
+  <div class="specs">
+    <div class="spec"><img src="img/gas-station.png" alt="fuel"><p>90L</p></div>
+    <div class="spec"><img src="img/car.png" alt="transmission"><p>Electric</p></div>
+    <div class="spec"><img src="img/profile-2user.png" alt="capacity"><p>4 People</p></div>
+  </div>
+  <div class="price-row">
+    <div><span class="price">$80.00</span><span class="per">/ day</span></div>
+    <button class="btn">Rent Now</button>
+  </div>
+</article>
+</section>
+
+
+</main>
+</div>
+<main>
+  <!-- Show more car section -->
+  <div class="show-more-wrapper">
+  <button class="show-more-btn">Show more car</button>
+  <span class="car-count">120 Car</span>
+</div>
+
+
+
+<!-- ========== Footer ========== -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2 class="logo">MORENT</h2>
+      <p class="desc">
+        Our vision is to provide convenience <br>
+        and help increase your sales business.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">How it works</a>
+        <a href="#">Featured</a>
+        <a href="#">Partnership</a>
+        <a href="#">Business Relation</a>
+      </div>
+      <div class="col">
+        <h4>Community</h4>
+        <a href="#">Events</a>
+        <a href="#">Blog</a>
+        <a href="#">Podcast</a>
+        <a href="#">Invite a friend</a>
+      </div>
+      <div class="col">
+        <h4>Socials</h4>
+        <a href="#">Discord</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </div>
+
+<div class="footer-bottom">
+  <div class="footer-copy">©2022 MORENT. All rights reserved</div>
+  <div class="policy">
+    <a href="#">Privacy & Policy</a>
+    <a href="#">Terms & Condition</a>
+  </div>
+</div>
+
+
+</footer>
+<!-- link JS -->
+
+</body>
+</html>

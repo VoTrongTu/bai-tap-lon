@@ -629,3 +629,7 @@ img{max-width:100%;display:block}
     color: #90A3BF; 
     align-content: center;
 }
+.detail-link{
+  text-decoration: none;
+  color: white;
+}

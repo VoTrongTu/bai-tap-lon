@@ -1,14 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // --- Hiệu ứng thả tim ---
-  const hearts = document.querySelectorAll(".heart");
-  hearts.forEach(heart => {
-    heart.addEventListener("click", () => {
-      heart.src = heart.src.includes("heart-red.png")
-        ? "img/heart.png"
-        : "img/heart-red.png";
-    });
-  });
-
   // --- Tick xanh ---
   document.querySelectorAll(".sidebar-element").forEach(row => {
     row.addEventListener("click", () => {

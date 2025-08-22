@@ -80,7 +80,7 @@
     position: fixed;
     top: 64px; /* bằng chiều cao top bar */
     left: -100%;
-    width: 260px;
+    width: auto;
     height: 100%;
     background: #fff;
     box-shadow: 2px 0 6px rgba(0,0,0,0.2);

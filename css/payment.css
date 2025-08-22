@@ -467,6 +467,10 @@
 a{
     text-decoration: none;
 }
-a:hover{
-    background-color: #8ba3ea;
+
+.contact-link{
+    text-decoration: none;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    color: #90A3BF; 
+    align-content: center;
 }

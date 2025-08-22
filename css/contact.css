@@ -1,0 +1,304 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*----------------header--------------------*/
+.contact-header{
+    width: 100%;
+    height: 160px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-header-bentrai{
+    flex: 0 0 80%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.contact-header-brand{
+    width: auto;
+    height: auto;
+    text-decoration: none;
+}
+.detail-bar-top-logo-text{
+    width: auto;
+    height: auto;
+    font: 700 50px/150% 'Plus Jakarta Sans';
+    color: #3563E9;
+}
+.contact-header-amenities{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.contact-header-services,
+.contact-header-aboutus,
+.contact-header-our,
+.contact-header-mobility,
+.contact-header-news{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.contact-header-services-text,
+.contact-header-aboutus-text,
+.contact-header-our-text,
+.contact-header-mobility-text,
+.contact-header-news-text{
+    width: auto;
+    font: 600 14px/150% 'Plus Jakarta Sans';
+}
+.contact-header-benphai{
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-end;
+}
+.contact-header-contact,
+.contact-header-join{
+    width: auto;
+    height: auto;
+    align-items: center;
+    display: flex;
+}
+.contact-header-contact-text,.contact-header-join-text{
+    width: auto;
+    height: auto;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+}
+/*-----------------main--------------------*/
+.contact-main{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact-main-txt{
+    width: 100%;
+    height: 150px;
+    background: #3563E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-main-text{
+    font-family: 'Plus Jakarta Sans';
+    color: white;
+}
+.contact-address{
+    width: 100%;
+    height: auto;
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 90px;
+}
+.contact-trai{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-trai-tren{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-info-map,
+.contact-info-phone,
+.contact-info-mail{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-map-pin,
+.contact-phone,
+.contact-mail{
+    width: auto;
+    height: auto;
+}
+.contact-info-txt{
+    font: 500 15px 'Plus Jakarta Sans';
+    color: #596780;
+}
+.contact-trai-duoi{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Lien-he-chung-toi{
+    font: 500 30px 'Plus Jakarta Sans';
+}
+.contact-fullname,.contact-email{
+    border-radius: 70px;
+    width: auto;
+    border: 1px solid #C3D4E966;
+    padding: 10px 0 10px 20px;
+    box-sizing: border-box;
+}
+.contact-fullname input,.contact-email input{
+    border: none;
+    outline: none;
+    width: 100%;
+    flex: 1;
+    font: 500 14px 'Plus Jakarta Sans';
+}
+.contact-content{
+    padding: 10px 0 100px 20px;
+    border-radius: 30px;
+    width: auto;
+    border: 1px solid #C3D4E966;
+    box-sizing: border-box;
+}
+.contact-content input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    font: 500 14px 'Plus Jakarta Sans';
+}
+.contact-send{
+    width: 200px;
+    height: auto;
+    padding: 9px;
+    box-sizing: border-box;
+    border: 1px solid #C3D4E966;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #3563E9;;
+}
+.contact-send:hover{
+    transform: scale(1.05);
+}
+.contact-btn-send{
+    width: auto;
+    height: auto;
+    font: 500 14px 'Plus Jakarta Sans';
+    color: white;
+}
+.contact-phai{
+    width: auto;
+    height: auto;
+} 
+.dang-ki-khuyen-mai{
+    width: 100%;
+    height: auto;
+    background: #3563E9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+.dang-ki-khuyen-mai-txt{
+    font: 500 32px 'Plus Jakarta Sans';
+    color: white;
+}
+.dang-ki-khuyen-mai-email{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.dang-ki-khuyen-mai input{
+    font: 500 16px 'Plus Jakarta Sans';
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 150px 10px 10px;
+}
+.dang-ki-khuyen-mai button{
+    position: absolute;
+    right: -1px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(45deg, #a8c033, #f18a60);
+    border-radius: 50px;
+}
+.contact-footer{
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+.contact-footer-tren{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-footer-tren-trai{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+}
+.contact-footer-logo{
+    font: 700 32px/150% 'Plus Jakarta Sans';
+    color: #3563E9;
+}
+.contact-footer-text{
+    font: 500 16px/150% 'Plus Jakarta Sans';
+    color: #13131399;
+}
+.contact-footer-tren-phai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 70%;
+    gap: 60px;
+}
+.contact-footer-info{
+    display: flex;
+    flex-direction: column;
+    width: 152px;
+    height: 244px;
+    opacity: 1;
+    gap: 24px;
+}
+.contact-info-text{
+    font: 600 20px/150% 'Plus Jakarta Sans';
+}
+.contact-info-describle{
+    font: 500 16px/150% 'Plus Jakarta Sans';
+    color: #13131399;
+}
+.contact-footer-duoi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact-footer-duoi-copyright{
+    font: 600 16px/150% 'Plus Jakarta Sans';
+}
+.contact-footer-left{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+}
+.contact-footer-duoi-privacy{
+    font: 600 16px/150% 'Plus Jakarta Sans';
+}
+.contact-footer-duoi-terms{
+    font: 600 16px/150% 'Plus Jakarta Sans';
+}

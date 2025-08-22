@@ -1027,3 +1027,9 @@ input[type="range"]::-webkit-slider-thumb {
 .detail-menu-toggle {
   display: none;
 }
+.contact-link{
+    text-decoration: none;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    color: #90A3BF; 
+    align-content: center;
+}

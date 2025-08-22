@@ -13,7 +13,9 @@
   font-weight: 700;
   color: #3563E9; /* xanh dương giống hình */
 }
-
+.logo{
+  text-decoration: none;
+}
 .search {
   display: flex;
   align-items: center;
@@ -274,6 +276,7 @@ img{max-width:100%;display:block}
   gap: 24px;
 }
 .card {
+  text-decoration: none;
   width: 317px;
   height: 388px;
   border-radius: 10px;
@@ -283,6 +286,12 @@ img{max-width:100%;display:block}
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
+  transition: transform 0.3s ease;
+}
+.card:hover{
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .card-top,
 .specs,
@@ -613,4 +622,10 @@ img{max-width:100%;display:block}
   color: #90A3BF;
   font-size: 14px;
   margin-right: 10px;
+}
+.contact-link{
+    text-decoration: none;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    color: #90A3BF; 
+    align-content: center;
 }

@@ -771,3 +771,9 @@ a {
 .Catalog4-Recomen2:hover{
      background-color: #d3d8df;
 }  
+.contact-link{
+    text-decoration: none;
+    font: 600 16px/150% 'Plus Jakarta Sans';
+    color: #90A3BF; 
+    align-content: center;
+}

@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts: Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- CSS chính và media -->
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="mediacss/detail-media.css">
     <title>Detail Car Rent</title>
 </head>
 <body>
+    <!-- Layout Tổng -->
     <div class="detail-layout">
         <!-------------nav bar top------------->
         <nav class="detail-bar-top">
             <a href="index.html" class="detail-bar-top-logo">
                 <p class="detail-bar-top-logo-text">MORENT</p>
             </a>
+            <!-- Thanh tìm kiếm -->
             <div class="detail-searchbox">
                 <img src="img/search-normal.png" alt="search" class="detail-searchbox-img">
                 <input type="text" placeholder="Search something here">
@@ -24,10 +28,13 @@
                     <img src="img/filter.png" alt="filter-search" class="detail-searchbox-filter">
                 </a>
             </div>
+            <!-- Menu, thông báo và avt -->
             <div class="detail-top-row">
+                <!-- Nút mở sidebar mobile -->
                 <div class="detail-menu-toggle">
                     <img src="img/detail-menu.png" alt="menu" id="menuToggle">
                 </div>
+                <!-- Biểu tượng -->
                 <div class="detail-profil">
                     <img src="img/Like.png" alt="Like" class="like">
                     <img src="img/Notification.png" alt="Notification" class="Notification">
@@ -37,9 +44,11 @@
             </div>
             
         </nav>
-        <!-------------content------------------->
+        <!------------- CONTENT CHÍNH ------------------->
         <main class="detail-content">
+            <!------------- Sidebar trái --------------->
             <section class="detail-bar-side">
+                <!-- TYPE -->
                 <div class="detail-TYPE">
                     <p class="detail-font-sidebar">T Y P E</p>
                     <div class="detail-TYPE-layout">
@@ -79,9 +88,9 @@
                                 <div class="sidebar-car-element">Hatchback <span style="color: lightgray;">(14)</span></div>
                             </div>                            
                         </div>
-                    </div>
-                    
+                    </div>                
                 </div>
+                <!-- CAPACITY -->
                 <div class="detail-CAPACITY">
                     <p class="detail-font-sidebar">C A P A C I T Y</p>
                     <div class="detail-TYPE-layout">
@@ -111,6 +120,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- PRICE -->
                 <div class="detail-PRICE">
                     <p class="detail-font-sidebar">P R I C E</p>
                     <div class="detail-pricerange-layout">
@@ -121,22 +131,21 @@
                     </div>
                 </div>
             </section>
+            <!------------- MAIN CONTENT ------------>
             <section class="detail-main-content">
                 <div class="detail-content-info">
-                    <!--ảnh detail-->
+                    <!-- ảnh xe chi tiết -->
                     <div class="detail-car-img">
-                        <!--ảnh chính-->
-                     
+                        <!-- ảnh chính -->
                             <img src="img/View.png" class="anh-main" id="mainCarImg" alt="Ảnh chính">
-                      
-                        <!--ảnh phụ-->
+                        <!-- ảnh phụ -->
                         <div class="car-img-modifier">
                             <img src="img/view-1.png" class="thumb" alt="car1" loading="lazy">
                             <img src="img/view-2.png" class="thumb" alt="car2" loading="lazy">
                             <img src="img/view-3.png" class="thumb" alt="car3" loading="lazy">
                         </div>
                     </div>
-
+                    <!-- Thông tin xe -->
                     <div class="detail-car-info">
                         <div class="nissan-phandau">
                             <div class="car-name">
@@ -148,11 +157,13 @@
                             </div>
                             <img src="img/heart-red.png" class="detail-heart">
                         </div>
+                        <!-- Mô tả xe -->
                         <div class="Nissan-rv">
                             <p class="abc">
                                 NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
                             </p>
                         </div>
+                        <!-- Thông số kỹ thuật -->
                         <div class="Nissan-Spesification">
                             <div class="Spesification">
                                 <div class="Spesification-tren">
@@ -175,6 +186,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Giá và nút Rent Now -->
                         <div class="detail-phancuoi">
                             <div class="detail-price">
                                 <p class="detail-price-tren">$80.00/ <span class="detail-price-duoi">days</span></p>
@@ -195,6 +207,7 @@
                             <p style="font: 700 14px 'Plus Jakarta Sans';width: 20px;height: 16px;color: white;">13</p>
                         </div>
                     </div>
+                    <!-- Thông tin từng reviewer -->
                     <div class="detail-review-layout">
                         <div class="detail-reviewer">
                             <img src="img/Profil.png" class="detail-profil-reviewer">
@@ -231,6 +244,7 @@
                             </p>
                         </div>
                     </div>
+                    <!-- ... các reviewer khác ... -->
                     <div class="detail-showall">
                         <p class="detail-showall-button-text">Show All</p>
                         <img src="img/detail-arrowdown.png" class="detail-showall-button">
@@ -246,6 +260,7 @@
                             <p class="detail-recent-viewall">View All</p>
                         </div>
                     </div>
+                    <!-- Danh sách xe gần đây -->
                     <div class="detail-catalogue">
                         <!------------------------car1-------------------------->
                         <div class="detail-catalog">
@@ -465,9 +480,10 @@
                 </div>
             </section>
         </main>
-        <!-------------footer-------------------->
+        <!------------- FOOTER -------------------->
         <footer class="detail-footer">
             <div class="detail-footer-tren">
+                <!-- Logo và mô tả -->
                 <div class="detail-footer-logo">
                     <p class="detail-footer-logo-text">MORENT</p>
                     <p class="detail-footer-logo-describe">
@@ -475,7 +491,7 @@
                     </p>
                     <a href="contact.html" class="contact-link">@ Our contact details</a>
                 </div>
-
+                <!-- About -->
                 <div class="detail-about">
                     <p class="detail-about-text">About</p>
                     <div class="detail-about-describe-layout">
@@ -485,7 +501,7 @@
                         <p class="detail-about-describe">Bussiness Relation</p>
                     </div>
                 </div>
-
+                <!-- Community -->
                 <div class="detail-community">
                     <p class="detail-about-text">Community</p>
                     <div class="detail-about-describe-layout">
@@ -495,7 +511,7 @@
                         <p class="detail-about-describe">Invite a friend</p>
                     </div>
                 </div>
-
+                <!-- Socials -->
                 <div class="detail-socials">
                     <p class="detail-about-text">Socials</p>
                     <div class="detail-about-describe-layout">
@@ -506,8 +522,9 @@
                     </div>
                 </div>
             </div>
+            <!-- Line chia cách -->
             <img src="img/detail-footer-line.png" class="detail-footer-line">
-
+            
             <div class="detail-footer-duoi">
                 <p class="detail-footer-duoi-copyright">©2022 MORENT. All rights reserved</p>
                 <div class="detail-footer-left">
@@ -516,6 +533,7 @@
                 </div>
             </div>
         </footer>
+        <!-- Script JS -->
         <script src="js/style.js"></script>
     </div>
 </body>

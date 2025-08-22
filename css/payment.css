@@ -2,7 +2,6 @@
 {
     width :1440px;
     height: 2844px;
-
 }
 .Nav-Bar-Top{
     width: 1440px;
@@ -20,22 +19,18 @@
     align-items: center;
     border: 1px solid #000;
     border-radius: 70px;
-    
 }
-
 .logo{
     font: normal 700 32px 'Plus Jakarta Sans';
     color: #3563E9;
     line-height: 150%;
     margin-right: 64px;
 }
-
 .search-img{
     width :24px;
     height: 24px;
     margin-left: 20px;
     margin-right: 20px;
-
 }
 .search-something{
     height: 20px;
@@ -76,7 +71,6 @@
     gap: 32px;
     margin-top: 32px;
     margin-left: 32px;
-    
 }
 .Rental-Info,
 .Billing-Info,
@@ -130,7 +124,7 @@
     border-radius: 10px;
     background-color: #F6F7F9;
 }
-/* ------------------------------------------- */
+/* -----------------Rental-Info-------------------------- */
 .Rental-Info{
     height: 664px;
     border-radius: 10px;
@@ -241,11 +235,10 @@
     width: 100px;
     height: 24px;
 }
-/* ===================================================== */
+/* ========================Confirmation-Renta============================= */
 .Confirmation-Rental{
     height: 484px;
     border-radius: 10px;
-   
 }
 .Confirmation{
     display: flex;
@@ -261,8 +254,7 @@
     background-color:#F6F7F9 ;
     padding-left: 32px;
     font: normal 600 16px 'Plus Jakarta Sans';
-    color: #1F2544;
-    
+    color: #1F2544;    
 }
 .Rent-Now{
     width :140px;
@@ -467,7 +459,6 @@
 a{
     text-decoration: none;
 }
-
 .contact-link{
     text-decoration: none;
     font: 600 16px/150% 'Plus Jakarta Sans';

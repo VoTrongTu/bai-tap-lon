@@ -122,6 +122,8 @@ a:hover{
     border-radius: 10px;
     gap: 12px;
     align-items: center;
+    padding: 18px;
+    box-sizing: border-box;
 }
 #Text-icon{
     display: flex;
